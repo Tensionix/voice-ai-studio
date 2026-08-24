@@ -1,0 +1,77 @@
+# Theme catalog (pattern carried from Audion family ui_theme_catalog).
+# Consumed by the PySide6 Qt stylesheet (iteration 2). Token names match the
+# family convention so the Qt theme maps them 1:1. Default = dark with blue accents
+# (the familiar look); "graphite" is the Graphite Code alternative.
+
+default_theme: dark_blue
+
+# Reusable color ramps.
+ramps:
+  blue:    {"50": "#E6F1FB", "100": "#B5D4F4", "200": "#85B7EB", "400": "#378ADD", "600": "#185FA5", "800": "#0C447C", "900": "#042C53"}
+  graphite: {"50": "#EDEDEF", "100": "#C9CACE", "200": "#9A9CA3", "400": "#5E626B", "600": "#3A3D45", "800": "#26282E", "900": "#191A1E"}
+  teal:    {"50": "#E1F5EE", "100": "#9FE1CB", "200": "#5DCAA5", "400": "#1D9E75", "600": "#0F6E56", "800": "#085041", "900": "#04342C"}
+  coral:   {"50": "#FAECE7", "100": "#F5C4B3", "200": "#F0997B", "400": "#D85A30", "600": "#993C1D", "800": "#712B13", "900": "#4A1B0C"}
+  amber:   {"50": "#FCF1DD", "100": "#F6D595", "200": "#EEB54E", "400": "#D8901A", "600": "#9C6610", "800": "#6F490B", "900": "#3F2905"}
+
+themes:
+  # DEFAULT — dark with blue accents (the common, expected look).
+  dark_blue:
+    label: "Mess Blue"
+    label_ru: "Mess Blue"
+    mode: dark
+    tokens:
+      color-background-primary: "#0B141E"      # between cards + list/log surface
+      color-background-secondary: "#17212B"    # neutral Telegram sidebar/card gray
+      color-background-tertiary: "#0E1621"     # alternate dark layer / hover
+      color-background-work: "#0B141E"         # list/log surface
+      color-background-control: "#242F3D"      # selects and fields
+      color-background-action: "#4E9CE4"       # Telegram round icon button
+      color-text-primary: "#F4F4F4"           # Telegram sidebar names
+      color-text-secondary: "#8090A4"         # Telegram sidebar previews
+      color-text-tertiary: "#6080A4"
+      color-text-log: "#B0D0F0"               # Telegram code/log message text
+      color-text-control: "#B0D0F0"
+      color-icon-primary: "#EAF4FF"
+      color-icon-secondary: "#DDEAF7"
+      color-border-primary: "#4E9CE4"
+      color-border-secondary: "#2B5278"
+      color-border-tertiary: "#101D2A"
+      color-border-control: "#242F3D"
+      color-border-work: "#4E9CE4"
+      color-accent-primary: "#4E9CE4"          # sampled Telegram icon blue
+      color-accent-secondary: "#8090A4"
+      color-accent-tertiary: "#DDEAF7"
+      color-status-error: "#D85A30"
+      color-status-warning: "#D8901A"
+      color-status-success: "#1D9E75"
+
+  # Graphite Code: neutral dark base with dark-orange coding accents.
+  graphite:
+    label: "Graphite Code"
+    label_ru: "Graphite Code"
+    mode: dark
+    tokens:
+      color-background-primary: "#101116"
+      color-background-secondary: "#202229"
+      color-background-tertiary: "#2D3037"
+      color-background-work: "#111217"
+      color-background-control: "#1A1C22"
+      color-background-action: "#B76127"
+      color-text-primary: "#ECEDEF"
+      color-text-secondary: "#A9ADB5"
+      color-text-tertiary: "#71757E"
+      color-text-log: "#D1D4DA"
+      color-text-control: "#D1D4DA"
+      color-icon-primary: "#F5F1EC"
+      color-icon-secondary: "#E5DFD8"
+      color-border-primary: "#40434B"
+      color-border-secondary: "#30323A"
+      color-border-tertiary: "#26282E"
+      color-border-control: "#373A42"
+      color-border-work: "#8A4E24"
+      color-accent-primary: "#B76127"          # dark orange accent
+      color-accent-secondary: "#5DCAA5"
+      color-accent-tertiary: "#D8833C"
+      color-status-error: "#D85A30"
+      color-status-warning: "#D8901A"
+      color-status-success: "#1D9E75"

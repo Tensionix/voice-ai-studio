@@ -1,0 +1,615 @@
+# RU/EN UI strings (PySide6 GUI, iteration 2). Editable without touching code.
+# Loader: system_core/ui/i18n.py. Keys are stable; add languages by adding a block.
+
+default_language: ru
+languages: [ru, en]
+
+strings:
+  # --- window / global ---
+  app_title:            {ru: "Audion Voice AI",            en: "Audion Voice AI"}
+  language:             {ru: "Язык",                        en: "Language"}
+  app_language:         {ru: "Язык приложения",             en: "App language"}
+  transcription_language: {ru: "Язык транскрипции",         en: "Transcript language"}
+  lang_auto:            {ru: "Авто",                        en: "Auto"}
+  lang_layout:          {ru: "Раскладка окна",              en: "Window layout"}
+  lang_ru:              {ru: "Русский",                     en: "Russian"}
+  lang_en:              {ru: "Английский",                  en: "English"}
+  theme:                {ru: "Тема",                        en: "Theme"}
+  compute_mode:         {ru: "Файловый движок",             en: "File engine"}
+  mode_api:             {ru: "API-модели",                  en: "API models"}
+  mode_vulkan:          {ru: "Локальные модели",            en: "Local models"}
+  mode_cuda:            {ru: "CUDA",                        en: "CUDA"}
+  mode_cpu:             {ru: "Локально (CPU)",              en: "Local (CPU)"}
+  mode_gpu:             {ru: "Локально (GPU)",              en: "Local (GPU)"}
+
+  # --- main panel zones (TZ 5.1) ---
+  input_area:           {ru: "Перетащите файлы или папку",  en: "Drag files or a folder here"}
+  choose_folder:        {ru: "Выбрать папку",               en: "Choose folder"}
+  queue:                {ru: "Очередь",                     en: "Queue"}
+  add:                  {ru: "Добавить",                    en: "Add"}
+  add_sources:          {ru: "Добавить…",                   en: "Add…"}
+  add_files:            {ru: "Файлы…",                      en: "Files…"}
+  add_folder:           {ru: "Папку…",                      en: "Folder…"}
+  add_files_tip:        {ru: "Выбрать внешние медиафайлы. Они обрабатываются по исходным путям и не копируются в input.",
+                         en: "Choose external media files. They are processed at their original paths and are not copied into input."}
+  add_folder_tip:       {ru: "Выбрать папку. Поддерживаемые медиафайлы из неё и вложенных папок добавятся по исходным путям.",
+                         en: "Choose a folder. Supported media in it and its subfolders is added using the original paths."}
+  queue_hint:           {ru: "Перетащите файлы или папку сюда", en: "Drag files or a folder here"}
+  supported_formats_short: {ru: "Форматы",                  en: "Formats"}
+  supported_formats:    {ru: "Поддерживаемые форматы: {formats}", en: "Supported formats: {formats}"}
+  unsupported_files_skipped: {ru: "Пропущены неподдерживаемые файлы: {count}. Поддерживаемые форматы: {formats}",
+                              en: "Skipped unsupported files: {count}. Supported formats: {formats}"}
+  media_files:          {ru: "Медиафайлы",                  en: "Media files"}
+  all_files:            {ru: "Все файлы",                   en: "All files"}
+  col_file:             {ru: "Файл",                        en: "File"}
+  col_status:           {ru: "Статус",                      en: "Status"}
+  col_select:           {ru: "✓",                           en: "✓"}
+  workspace_tab_queue:  {ru: "Очередь",                     en: "Queue"}
+  workspace_tab_live_log: {ru: "Live / журнал",             en: "Live / activity"}
+  settings:             {ru: "Настройки",                   en: "Settings"}
+  settings_section_main: {ru: "Основное",                   en: "Main"}
+  settings_section_file_ops: {ru: "Файлы",                  en: "Files"}
+  settings_section_settings: {ru: "Настройки",              en: "Settings"}
+  settings_section_modules: {ru: "Обслуживание",            en: "Maintenance"}
+  settings_section_generation: {ru: "Генерация",            en: "Generation"}
+  settings_section_export: {ru: "Экспорт",                  en: "Export"}
+  settings_section_live: {ru: "Live",                       en: "Live"}
+  export_formats:       {ru: "Форматы экспорта",            en: "Export formats"}
+  logs:                 {ru: "Журнал",                      en: "Activity log"}
+  run:                  {ru: "Запустить",                   en: "Run"}
+  run_diar:             {ru: "Диаризация",                  en: "Diarization"}
+  run_cleanup:          {ru: "Чистка",                      en: "Cleanup"}
+  run_on:               {ru: "вкл",                         en: "on"}
+  run_off:              {ru: "выкл",                         en: "off"}
+  pause:                {ru: "Пауза",                        en: "Pause"}
+  stop:                 {ru: "Стоп",                         en: "Stop"}
+  retry_failed:         {ru: "Повторить ошибки",            en: "Retry failed"}
+  clear_queue:          {ru: "Удалить выделенные файлы из input", en: "Delete selected files from input"}
+  delete_input_confirm: {ru: "Удалить выбранные файлы из папки input без возможности восстановления? Файлов: {count}",
+                         en: "Permanently delete the selected files from the input folder? Files: {count}"}
+  delete_input_done:    {ru: "Удалено файлов из input: {count}", en: "Deleted files from input: {count}"}
+  delete_input_outside: {ru: "Корзина удаляет только файлы внутри папки input.", en: "The trash button only deletes files inside the input folder."}
+  delete_input_failed:  {ru: "Не удалось удалить: {error}", en: "Could not delete: {error}"}
+  queue_select_files:   {ru: "Сначала выделите один или несколько файлов.", en: "Select one or more files first."}
+  remove_queue_selected: {ru: "Убрать выделенные из очереди", en: "Remove selected from queue"}
+  cleanup_temp_selected: {ru: "Очистить временные файлы выделенных", en: "Clean temporary files for selected"}
+  cleanup_temp_done:    {ru: "Временные данные очищены: {count}", en: "Temporary data cleaned: {count}"}
+  clear_log:            {ru: "Очистить журнал",             en: "Clear activity log"}
+  save_log_md:          {ru: "Сохранить журнал в Markdown", en: "Save activity log as Markdown"}
+  save_log_dialog:      {ru: "Сохранить журнал",            en: "Save activity log"}
+  save_log_empty:       {ru: "Журнал пуст.",                en: "The activity log is empty."}
+  save_log_done:        {ru: "Журнал сохранён: {path}",     en: "Activity log saved: {path}"}
+  save_log_failed:      {ru: "Не удалось сохранить журнал: {error}", en: "Could not save activity log: {error}"}
+  reset_app:            {ru: "Сброс настроек программы",     en: "Reset app settings"}
+  reset_app_desc:       {ru: "Возвращает настройки программы к дефолту Audion. Ключи API, установленные модули и очередь файлов не удаляются.",
+                         en: "Restores Audion defaults. API keys, installed modules, and the file queue are not removed."}
+  reset_app_button:     {ru: "Сбросить настройки",          en: "Reset settings"}
+  reset_app_confirm:    {ru: "Сбросить настройки программы к дефолту Audion? Ключи API, установленные модули и очередь файлов останутся на месте.",
+                         en: "Reset app settings to Audion defaults? API keys, installed modules, and the file queue will stay in place."}
+  reset_app_done:       {ru: "Настройки программы сброшены к дефолту Audion.",
+                         en: "App settings were reset to Audion defaults."}
+  install_log_prefix:   {ru: "[обслуживание]",              en: "[maintenance]"}
+  markdown_files:       {ru: "Markdown (*.md)",             en: "Markdown (*.md)"}
+  saved_at:             {ru: "Сохранено",                   en: "Saved"}
+  expand_log:           {ru: "Развернуть лог",              en: "Expand log"}
+  collapse_log:         {ru: "Свернуть лог",                en: "Collapse log"}
+  open_input:           {ru: "Открыть папку input",        en: "Open input folder"}
+  open_output:          {ru: "Открыть папку output",       en: "Open output folder"}
+  input_folder_button:  {ru: "Input",                       en: "Input"}
+  output_folder_button: {ru: "Output",                      en: "Output"}
+  advanced:             {ru: "Дополнительно",               en: "Advanced"}
+  save:                 {ru: "Сохранить",                   en: "Save"}
+  cancel:               {ru: "Отмена",                       en: "Cancel"}
+  prompt_choose:        {ru: "Выбрать",                      en: "Select"}
+
+  # --- queue statuses ---
+  status_pending:       {ru: "В очереди",                   en: "Pending"}
+  status_processing:    {ru: "Обработка",                   en: "Processing"}
+  status_completed:     {ru: "Готово",                      en: "Completed"}
+  status_failed:        {ru: "Ошибка",                      en: "Failed"}
+  status_skipped:       {ru: "Пропущено",                   en: "Skipped"}
+
+  # --- export formats (TZ 5.2) ---
+  fmt_markdown:         {ru: "Markdown",                    en: "Markdown"}
+  fmt_json:             {ru: "JSON",                        en: "JSON"}
+  fmt_txt:              {ru: "TXT",                         en: "TXT"}
+  fmt_srt:              {ru: "SRT",                         en: "SRT"}
+  fmt_vtt:              {ru: "WebVTT",                      en: "WebVTT"}
+
+  # --- processing options (TZ 5.3) ---
+  transcription_mode:   {ru: "Режим транскрипции",          en: "Transcription mode"}
+  btn_transcription:    {ru: "Транскрипция",                en: "Transcription"}
+  btn_transcription_tip:
+    ru: "Обычная транскрипция без разметки спикеров."
+    en: "Plain transcription without speaker labels."
+  btn_transcription_diar: {ru: "Транскрипция + диаризация", en: "Transcription + diarization"}
+  btn_transcription_diar_tip:
+    ru: "OpenAI diarize использует нативные speaker labels. В Studio локальные файловые движки GigaAM/whisper.cpp получают speaker labels вторым проходом через pyannote."
+    en: "OpenAI diarize uses native speaker labels. In Studio, local file engines GigaAM/whisper.cpp get speaker labels through a second pyannote pass."
+  file_stt_provider:    {ru: "Провайдер файлов",            en: "File provider"}
+  file_provider_openai: {ru: "OpenAI",                      en: "OpenAI"}
+  file_provider_xai:    {ru: "xAI Grok",                    en: "xAI Grok"}
+  file_provider_gemini: {ru: "Gemini",                      en: "Gemini"}
+  file_provider_gigachat: {ru: "GigaChat API",              en: "GigaChat API"}
+  file_provider_assemblyai: {ru: "AssemblyAI",              en: "AssemblyAI"}
+  stt_model:            {ru: "Профиль / модель",            en: "Profile / model"}
+  openai_profile_fast:  {ru: "Быстро / экономно",           en: "Fast / economical"}
+  openai_profile_fast_tip: {ru: "gpt-4o-mini-transcribe: быстрее и дешевле, хороший выбор для обычных файлов.",
+                         en: "gpt-4o-mini-transcribe: faster and cheaper, good for ordinary files."}
+  openai_profile_accurate: {ru: "Макс. точность",           en: "Max accuracy"}
+  openai_profile_accurate_tip: {ru: "gpt-4o-transcribe: лучший общий OpenAI-профиль для точной транскрибации без speaker labels.",
+                         en: "gpt-4o-transcribe: best general OpenAI profile for accurate transcription without speaker labels."}
+  openai_profile_diarize: {ru: "С диаризацией",             en: "With diarization"}
+  openai_profile_diarize_tip: {ru: "gpt-4o-transcribe-diarize: нативные speaker labels OpenAI для файлов, без CUDA/pyannote.",
+                         en: "gpt-4o-transcribe-diarize: native OpenAI speaker labels for files, without CUDA/pyannote."}
+  postprocess_model:    {ru: "Модель постобработки",        en: "Post-processing model"}
+  refresh_models:       {ru: "Обновить из API",             en: "Refresh from API"}
+  refresh_models_all:   {ru: "Обновить все модели из API",  en: "Refresh all models from API"}
+  context:              {ru: "Описание записи",             en: "Recording description"}
+  context_hint:         {ru: "Тема, участники, цель и важные факты обычным текстом. Точные написания добавляйте в словарь терминов.",
+                         en: "Describe the topic, participants, purpose and important facts. Put exact spellings in the term dictionary."}
+  app_behavior:         {ru: "Поведение приложения",        en: "App behavior"}
+  show_tray:            {ru: "Показывать приложение в трее", en: "Show app in system tray"}
+  assemblyai:           {ru: "AssemblyAI (опц.)",           en: "AssemblyAI (optional)"}
+  model_source_cache:   {ru: "кэш",                         en: "cache"}
+  model_source_fallback: {ru: "резерв",                      en: "fallback"}
+  model_source_api:     {ru: "API",                         en: "API"}
+
+  # --- post-processing ---
+  generation_settings:  {ru: "Настройки генерации",         en: "Generation options"}
+  pp_title:             {ru: "Заголовок",                   en: "Title"}
+  pp_summary:           {ru: "Резюме",                      en: "Summary"}
+  pp_tags:              {ru: "Теги",                        en: "Tags"}
+  pp_action_items:      {ru: "Задачи",                      en: "Action items"}
+  cleanup:              {ru: "Оформление транскрипции",     en: "Transcript formatting"}
+  cleanup_model:        {ru: "Модель",                      en: "Model"}
+  cleanup_prompt:       {ru: "Шаблон оформления",           en: "Formatting template"}
+  hotwords:             {ru: "Словарь терминов",            en: "Term dictionary"}
+  hotwords_hint:        {ru: "Общий словарь для Live и файлов: точные названия, имена, аббревиатуры и форматы через запятую. Используется распознаванием, если движок поддерживает подсказки, и при включённом оформлении.",
+                         en: "Shared by Live and file transcription: exact names, abbreviations and formats separated by commas. Used by STT engines that support prompting and by formatting when enabled."}
+  prompts_builtin:      {ru: "Встроенные (закреплены)",     en: "Built-in (pinned)"}
+  prompts_user:         {ru: "Мои промпты",                 en: "My prompts"}
+  prompt_add:           {ru: "Добавить",                    en: "Add"}
+  prompt_pin:           {ru: "Закрепить",                   en: "Pin"}
+  prompt_delete:        {ru: "Удалить",                     en: "Delete"}
+
+  # --- pipeline flags ---
+  skip_existing:        {ru: "Пропускать существующие",      en: "Skip existing outputs"}
+  skip_existing_hint:   {ru: "Пропускать уже созданные результаты", en: "Skip existing outputs"}
+  force_reprocess:      {ru: "Принудительно заново",         en: "Force reprocess"}
+  force_reprocess_hint: {ru: "Принудительно обработать заново", en: "Force reprocess"}
+  save_next_to_source:  {ru: "Сохранять рядом с оригиналом", en: "Save next to original"}
+  save_next_to_source_hint: {ru: "Сохранять рядом с оригиналом", en: "Save next to original"}
+  recursive:            {ru: "Включая подпапки",            en: "Recursive folders"}
+  recursive_hint:       {ru: "Добавлять файлы из подпапок", en: "Include subfolders"}
+
+  # --- live dictation / tray (iteration 3) ---
+  tray_show:            {ru: "Показать окно",               en: "Show window"}
+  tray_hide:            {ru: "Свернуть в трей",             en: "Hide to tray"}
+  tray_live:            {ru: "Live-диктовка",               en: "Live dictation"}
+  tray_live_xai:        {ru: "Live-диктовка xAI",           en: "Live dictation xAI"}
+  tray_live_gigaam:     {ru: "Live-диктовка GigaAM",        en: "Live dictation GigaAM"}
+  live_status_on:       {ru: "включена",                    en: "on"}
+  live_status_off:      {ru: "выключена",                   en: "off"}
+  tray_open_output:     {ru: "Открыть папку вывода",        en: "Open output folder"}
+  tray_quit:            {ru: "Выход",                       en: "Quit"}
+  tray_minimized_title: {ru: "Audion Voice AI",             en: "Audion Voice AI"}
+  tray_minimized_msg:   {ru: "Свёрнуто в трей. Кликните по значку, чтобы открыть.",
+                         en: "Running in the tray. Click the icon to reopen."}
+  live_armed_msg:       {ru: "Live-диктовка включена ({hotkey}).",
+                         en: "Live dictation armed ({hotkey})."}
+  live_disarmed_msg:    {ru: "Live-диктовка выключена.",    en: "Live dictation off."}
+  live_quick_profile_msg: {ru: "{profile}: включена. Горячая клавиша: {hotkey}",
+                         en: "{profile}: enabled. Hotkey: {hotkey}"}
+  live_hotkey_failed:   {ru: "Не удалось включить хоткей (только Windows).",
+                         en: "Could not install the hotkey (Windows only)."}
+  live_capture_failed:  {ru: "Микрофон не удалось открыть. Проверены устройства записи и связи по умолчанию; подробности — в журнале.",
+                         en: "Could not open the microphone. The default recording and communications devices were checked; see the log for details."}
+  live_deps_auto_start: {ru: "Не хватает Live deps ({missing}). Устанавливаю автоматически…",
+                         en: "Live deps are missing ({missing}). Installing automatically…"}
+  live_deps_auto_done:  {ru: "Live deps установлены и проверены. Микрофонная подсистема включена.",
+                         en: "Live deps were installed and verified. The microphone subsystem is enabled."}
+  live_deps_auto_failed: {ru: "Автоустановка Live deps не завершилась (код {code}): {error}. Повторите установку на странице «Обслуживание».",
+                          en: "Automatic Live deps installation failed (code {code}): {error}. Retry it on the Maintenance page."}
+  live_deps_auto_missing_installer: {ru: "Не найден установщик Live deps: {path}",
+                                     en: "The Live deps installer is missing: {path}"}
+  live_error:           {ru: "Ошибка Live-диктовки (см. лог).",
+                         en: "Live dictation error (see log)."}
+  live_empty:           {ru: "Пусто — речь не распознана.",
+                         en: "Empty — no speech recognized."}
+  live_cancelled:       {ru: "Live-диктовка отменена.",
+                         en: "Live dictation cancelled."}
+  live_latched_on:      {ru: "Непрерывная диктовка включена (двойной тап — стоп).",
+                         en: "Continuous dictation on (double-tap to stop)."}
+  live_latched_off:     {ru: "Непрерывная диктовка остановлена.",
+                         en: "Continuous dictation stopped."}
+  live_region_blocked:  {ru: "OpenAI Realtime недоступен из вашего региона (HTTP 403). Включите VPN — как для остального API OpenAI.",
+                         en: "OpenAI Realtime is blocked in your region (HTTP 403). Enable a VPN, as for the rest of the OpenAI API."}
+  live_settings:        {ru: "Live-диктовка",               en: "Live dictation"}
+  live_audio_badge:     {ru: "Микрофон · {device}",         en: "Microphone · {device}"}
+  live_audio_select_auto: {ru: "Авто-детект",               en: "Auto-detect"}
+  live_audio_auto_windows: {ru: "авто — устройство Windows", en: "auto — Windows default"}
+  live_audio_device_hint: {ru: "Выбор микрофона только для текущего запуска. Список обновляется при открытии; после перезапуска снова включается авто-детект.",
+                           en: "Microphone choice for this run only. The list refreshes when opened; restarting restores auto-detect."}
+  live_audio_unavailable: {ru: "Недоступно · {device}",      en: "Unavailable · {device}"}
+  live_audio_device_missing: {ru: "выбранное устройство недоступно", en: "selected device unavailable"}
+  live_prewarm_local:   {ru: "Загружать локальную модель заранее",
+                         en: "Preload local model"}
+  live_prewarm_local_hint: {ru: "Ускоряет первую локальную диктовку, но заранее занимает RAM/VRAM. Горячая клавиша активируется автоматически вместе с приложением.",
+                            en: "Speeds up the first local dictation but reserves RAM/VRAM in advance. The hotkey is activated automatically with the app."}
+  live_language:        {ru: "Основной язык",               en: "Primary language"}
+  live_language_hint:   {ru: "По умолчанию язык берётся из раскладки целевого окна для каждой новой фразы: локально RU запускает GigaAM, EN — Whisper.cpp. Русский, Английский и Авто служат явным переопределением.",
+                         en: "For every new phrase, the target window layout is used by default: local RU runs GigaAM and EN runs Whisper.cpp. Russian, English and Auto explicitly override it."}
+  live_engine:          {ru: "Live-движок",                 en: "Live engine"}
+  live_engine_batch:    {ru: "OpenAI batch",                en: "OpenAI batch"}
+  live_engine_realtime: {ru: "OpenAI Realtime",             en: "OpenAI Realtime"}
+  live_engine_vulkan:   {ru: "Локальные модели",            en: "Local models"}
+  live_source:          {ru: "Источник Live",               en: "Live source"}
+  live_source_api:      {ru: "API-модели",                  en: "API models"}
+  live_source_local:    {ru: "Локальные модели",            en: "Local models"}
+  live_api_provider:    {ru: "API-провайдер",               en: "API provider"}
+  live_api_provider_openai: {ru: "OpenAI",                  en: "OpenAI"}
+  live_api_provider_xai: {ru: "xAI",                        en: "xAI"}
+  live_api_provider_elevenlabs: {ru: "ElevenLabs",          en: "ElevenLabs"}
+  live_api_mode:        {ru: "Режим OpenAI",                en: "OpenAI mode"}
+  live_api_mode_batch:  {ru: "Пакетный",                    en: "Batch"}
+  live_api_mode_realtime: {ru: "Реальное время",            en: "Realtime"}
+  live_api_model:       {ru: "Модель API",                  en: "API model"}
+  live_openai:          {ru: "Live через API",              en: "API Live"}
+  live_openai_model:    {ru: "Модель OpenAI",               en: "OpenAI model"}
+  live_vulkan:          {ru: "Локальный Live",              en: "Local Live"}
+  file_vulkan:          {ru: "Локальные модели для файлов", en: "File local models"}
+  live_local_engine:    {ru: "Локальный движок",            en: "Local engine"}
+  file_local_engine:    {ru: "Локальный движок",            en: "Local engine"}
+  local_engine_gigaam:  {ru: "GigaAM",                      en: "GigaAM"}
+  local_engine_whispercpp: {ru: "whisper.cpp",              en: "whisper.cpp"}
+  file_vulkan_model:    {ru: "Локальная модель",            en: "Local model"}
+  file_vulkan_backend:  {ru: "Локальный бэкенд",            en: "Local backend"}
+  local_hw_initializing: {ru: "GPU initializing...",         en: "GPU initializing..."}
+  local_hw_progress:    {ru: "GPU initializing... {step}/{total} | {stage}", en: "GPU initializing... {step}/{total} | {stage}"}
+  local_hw_stage_start: {ru: "подготовка",                  en: "prepare"}
+  local_hw_stage_nvidia: {ru: "nvidia-smi",                  en: "nvidia-smi"}
+  local_hw_stage_windows_gpu: {ru: "Windows GPU list",       en: "Windows GPU list"}
+  local_hw_stage_onnx_runtime: {ru: "ONNX Runtime",          en: "ONNX Runtime"}
+  local_hw_stage_onnx_providers: {ru: "ONNX providers",      en: "ONNX providers"}
+  local_hw_stage_gigaam_runtime: {ru: "GigaAM runtime",      en: "GigaAM runtime"}
+  local_hw_stage_whispercpp: {ru: "whisper.cpp pack",        en: "whisper.cpp pack"}
+  local_hw_stage_recommendation: {ru: "fallback plan",       en: "fallback plan"}
+  local_hw_failed:      {ru: "GPU detection failed: {error}", en: "GPU detection failed: {error}"}
+  local_hw_no_gpu:      {ru: "GPU не обнаружен",            en: "No GPU detected"}
+  local_hw_badge:       {ru: "GPU: {gpu} • Стек: {stack}",  en: "GPU: {gpu} • Stack: {stack}"}
+  local_stack_onnx_cuda: {ru: "ONNX / CUDA",                en: "ONNX / CUDA"}
+  local_stack_onnx_directml: {ru: "ONNX / DirectML",        en: "ONNX / DirectML"}
+  local_stack_onnx_cpu: {ru: "ONNX / CPU",                  en: "ONNX / CPU"}
+  local_stack_whispercpp: {ru: "whisper.cpp",               en: "whisper.cpp"}
+  local_stack_whispercpp_vulkan: {ru: "whisper.cpp / GPU backend", en: "whisper.cpp / GPU backend"}
+  local_stack_whispercpp_cpu: {ru: "whisper.cpp / CPU fallback", en: "whisper.cpp / CPU fallback"}
+  local_stack_cpu:      {ru: "CPU fallback",                en: "CPU fallback"}
+  local_model_gigaam_v3_ctc: {ru: "GigaAM v3 CTC (Live)",   en: "GigaAM v3 CTC (Live)"}
+  local_model_gigaam_v3_rnnt: {ru: "GigaAM v3 RNN-T (File)", en: "GigaAM v3 RNN-T (File)"}
+  local_backend_auto:   {ru: "Авто",                        en: "Auto"}
+  local_backend_cuda:   {ru: "CUDA",                        en: "CUDA"}
+  local_backend_directml: {ru: "DirectML",                  en: "DirectML"}
+  local_backend_cpu:    {ru: "CPU fallback",                en: "CPU fallback"}
+  live_vulkan_model:    {ru: "Локальная модель",            en: "Local model"}
+  live_vulkan_model_small: {ru: "Small",                    en: "Small"}
+  live_vulkan_model_turbo: {ru: "Turbo",                    en: "Turbo"}
+  live_vulkan_model_large_v2: {ru: "Large V2",              en: "Large V2"}
+  live_vulkan_backend:  {ru: "Бэкенд",                      en: "Backend"}
+  live_backend_auto:    {ru: "Авто",                        en: "Auto"}
+  live_backend_vulkan:  {ru: "GPU backend",                 en: "GPU backend"}
+  live_backend_cpu:     {ru: "CPU fallback",                en: "CPU fallback"}
+  live_idle_unload:     {ru: "Выгрузка, с",                 en: "Unload, s"}
+  live_idle_unload_never: {ru: "Не выгружать",              en: "Keep warm"}
+  live_idle_unload_gigaam_locked: {ru: "GigaAM Live держит модель в памяти до полного выхода из программы.",
+                         en: "GigaAM Live keeps the model warm until the app exits."}
+  live_overlay:         {ru: "Оверлей",                     en: "Overlay"}
+  live_overlay_enabled: {ru: "Показывать оверлей",          en: "Show overlay"}
+  live_overlay_scale:   {ru: "Масштаб",                    en: "Scale"}
+  live_overlay_scale_hint: {ru: "Пропорциональный масштаб всей плашки. 100% — исходный размер.",
+                            en: "Proportional scale of the entire overlay. 100% is the original size."}
+  live_safety_timeout:  {ru: "Защитный интервал",           en: "Safety interval"}
+  live_safety_timeout_hint: {ru: "Предельная длительность непрерывной диктовки. Обычно сессия завершается кнопкой Стоп; интервал страхует от забытой записи.",
+                             en: "Maximum continuous dictation duration. Normally the session ends with Stop; this interval protects against a forgotten recording."}
+  live_safety_timeout_notice: {ru: "Защитный интервал истёк — диктовка завершается.",
+                                en: "Safety interval reached — finishing dictation."}
+  minutes_short:        {ru: "мин",                         en: "min"}
+  live_cleanup:         {ru: "Оформление Live",             en: "Live formatting"}
+  live_cleanup_model:   {ru: "Модель",                      en: "Model"}
+  live_cleanup_prompt:  {ru: "Шаблон оформления",           en: "Formatting template"}
+  live_cleanup_sentences: {ru: "Блок, предложений",         en: "Block, sentences"}
+  cuda_settings:        {ru: "CUDA",                        en: "CUDA"}
+  cuda_model:           {ru: "Модель CUDA",                 en: "CUDA model"}
+  cuda_whispercpp_resident: {ru: "whisper.cpp · cuBLAS · модель остаётся в VRAM до смены модели или выхода",
+                              en: "whisper.cpp · cuBLAS · model stays in VRAM until model switch or app exit"}
+  local_model_not_installed: {ru: "Модель не установлена", en: "Model is not installed"}
+  whispercpp_not_installed: {ru: "Недоступно: установите полный комплект whisper.cpp, Turbo и payloads.",
+                              en: "Unavailable: install the complete whisper.cpp pack, Turbo model, and payloads."}
+  cuda_whispercpp_not_installed: {ru: "Недоступно: нет полного CUDA/cuBLAS-комплекта whisper.cpp или выбранной модели.",
+                                   en: "Unavailable: the complete whisper.cpp CUDA/cuBLAS pack or selected model is missing."}
+  cuda_device:          {ru: "Устройство",                  en: "Device"}
+  cuda_compute_type:    {ru: "Compute type",                en: "Compute type"}
+  cuda_profile:         {ru: "Профиль",                     en: "Profile"}
+  cuda_profile_quality: {ru: "Качество",                    en: "Quality"}
+  cuda_profile_speed:   {ru: "Скорость",                    en: "Speed"}
+  cuda_profile_hint:
+    ru: "Качество (по умолчанию): обычный Faster-Whisper/CTranslate2 без batched inference. Он обычно бережнее к тихим вступлениям, служебным репликам, грязной речи и даёт более подробный таймлайн, что полезно для последующей диаризации. Нагрузка на GPU спокойнее, компьютер легче использовать параллельно. Скорость: включает BatchedInferencePipeline с batch_size=16. Это плотнее загружает CUDA/GPU и резко ускоряет длинные файлы или очередь файлов, но может сильнее зависеть от VAD, склеивать сегменты крупнее и иногда пропускать тихие/пограничные фразы. Используйте для быстрых прогонов, когда GPU можно отдать задаче."
+    en: "Quality (default): regular Faster-Whisper/CTranslate2 without batched inference. It is usually safer for quiet intros, production chatter, rough speech, and creates a more detailed timeline, which helps later diarization. GPU load is calmer, so the computer is easier to use in parallel. Speed: enables BatchedInferencePipeline with batch_size=16. This keeps CUDA/GPU much busier and can greatly speed up long files or file queues, but it depends more on VAD, may merge larger segments, and can occasionally miss quiet or boundary phrases. Use it for fast runs when the GPU can be dedicated to the job."
+  live_realtime:        {ru: "Потоковая",
+                         en: "Streaming (Realtime)"}
+  live_realtime_hint:   {ru: "Изменение вступит в силу после перезапуска.",
+                         en: "The change takes effect after restart."}
+  overlay_listening:    {ru: "Слушаю…",                     en: "Listening…"}
+  overlay_transcribing: {ru: "Расшифровка…",                en: "Transcribing…"}
+  overlay_mic_level:    {ru: "Реальный уровень сигнала микрофона", en: "Actual microphone signal level"}
+  overlay_drag:         {ru: "Перетащить плашку",           en: "Drag overlay"}
+  overlay_record:       {ru: "Начать диктовку",             en: "Start dictation"}
+  overlay_menu_live_mode: {ru: "Режим Live-диктовки",      en: "Live dictation mode"}
+  overlay_menu_file_mode: {ru: "Режим записи файла",       en: "File recording mode"}
+  dictation_history_title: {ru: "Последние диктовки",       en: "Past dictations"}
+  dictation_history_all_title: {ru: "Все диктовки",         en: "All dictations"}
+  dictation_history_paste_last: {ru: "Вставить последнюю диктовку", en: "Paste last dictation"}
+  dictation_history_paste: {ru: "Вставить эту диктовку",    en: "Paste this dictation"}
+  dictation_history_empty: {ru: "История диктовок пока пуста.", en: "Dictation history is empty."}
+  dictation_history_copy: {ru: "Копировать диктовку",       en: "Copy dictation"}
+  dictation_history_delete: {ru: "Удалить из истории",      en: "Delete from history"}
+  dictation_history_copied: {ru: "Диктовка скопирована в буфер обмена.", en: "Dictation copied to the clipboard."}
+  dictation_history_pasted: {ru: "Диктовка вставлена повторно.", en: "Dictation pasted again."}
+  dictation_history_deleted: {ru: "Диктовка удалена из истории.", en: "Dictation removed from history."}
+  overlay_cloud_connecting: {ru: "Облако: подключение",     en: "Cloud: connecting"}
+  overlay_cloud_ready:  {ru: "Облако: готово принимать звук", en: "Cloud: ready for audio"}
+  overlay_cloud_sending: {ru: "Облако: аудио отправляется", en: "Cloud: sending audio"}
+  overlay_cloud_receiving: {ru: "Облако: аудио отправляется, текст возвращается", en: "Cloud: audio sent, text returning"}
+
+  # --- long-form file recorder ---
+  recorder_start:       {ru: "Начать запись",                en: "Start recording"}
+  recorder_recording:   {ru: "Идёт запись…",                 en: "Recording…"}
+  recorder_paused:      {ru: "Запись на паузе",              en: "Recording paused"}
+  recorder_resumed:     {ru: "Запись продолжена.",            en: "Recording resumed."}
+  resume:               {ru: "Продолжить",                   en: "Resume"}
+  recorder_finalizing:  {ru: "Сохраняю запись…",             en: "Saving recording…"}
+  recorder_cancelling:  {ru: "Отменяю запись…",              en: "Cancelling recording…"}
+  recorder_started:     {ru: "Запись начата: {path}",        en: "Recording started: {path}"}
+  recorder_saved:       {ru: "Запись сохранена и добавлена в очередь: {path}",
+                         en: "Recording saved and added to the queue: {path}"}
+  recorder_cancelled:   {ru: "Запись отменена — файл удалён.",
+                         en: "Recording cancelled — the file was deleted."}
+  recorder_failed:      {ru: "Ошибка записи: {error}",       en: "Recording failed: {error}"}
+  recorder_queue_busy:  {ru: "Сначала остановите обработку очереди.",
+                         en: "Stop the queue first."}
+  recorder_live_busy:   {ru: "Сначала завершите текущую Live-диктовку.",
+                         en: "Finish the current Live dictation first."}
+  recorder_export:      {ru: "Экспорт записи",               en: "Export recording"}
+  recorder_export_m4a:  {ru: "Запись → M4A (AAC 128 кбит/с)…",
+                         en: "Recording → M4A (AAC 128 kbit/s)…"}
+  recorder_export_wav:  {ru: "Запись → WAV…",                en: "Recording → WAV…"}
+  recorder_export_select: {ru: "Запись:",                    en: "Recording:"}
+  recorder_export_empty: {ru: "Файлы Audion_Recording_*.wav и Audion_Recording_*.m4a не найдены в input и output.",
+                          en: "No Audion_Recording_*.wav or Audion_Recording_*.m4a files were found in input or output."}
+  recorder_exporting:   {ru: "Экспортирую запись…",          en: "Exporting recording…"}
+  recorder_exported:    {ru: "Запись экспортирована: {path}",
+                         en: "Recording exported: {path}"}
+  recorder_export_failed: {ru: "Не удалось экспортировать запись: {error}",
+                           en: "Could not export recording: {error}"}
+
+  # --- export connectors (Notion / Obsidian) ---
+  connectors:           {ru: "Экспорт-коннекторы",          en: "Export connectors"}
+  conn_obsidian:        {ru: "Obsidian (заметка в vault)",  en: "Obsidian (note in vault)"}
+  conn_notion:          {ru: "Notion (страница)",           en: "Notion (page)"}
+  conn_vault:           {ru: "Папка vault",                 en: "Vault folder"}
+  conn_vault_hint:      {ru: "Путь к папке Obsidian-vault", en: "Path to the Obsidian vault folder"}
+  conn_subfolder:       {ru: "Подпапка",                    en: "Subfolder"}
+  conn_browse:          {ru: "Обзор…",                      en: "Browse…"}
+  conn_parent_type:     {ru: "Родитель",                    en: "Parent"}
+  conn_parent_page:     {ru: "Страница",                    en: "Page"}
+  conn_parent_database: {ru: "База данных",                 en: "Database"}
+  conn_parent_id:       {ru: "ID родителя",                 en: "Parent id"}
+  conn_parent_hint:     {ru: "ID страницы или базы Notion", en: "Notion page or database id"}
+  conn_notion_key:      {ru: "Ключ Notion",                 en: "Notion key"}
+  conn_notion_key_prompt: {ru: "Вставьте Notion integration token (secret_…):",
+                           en: "Paste your Notion integration token (secret_…):"}
+  conn_key_set:         {ru: "Задан {key}",                 en: "Set {key}"}
+  conn_key_unset:       {ru: "Не задан",                    en: "Not set"}
+  notion_key_name:      {ru: "Ключ API Notion",            en: "Notion API key"}
+  notion_key_desc:      {ru: "Для экспорта в Notion. Сохраняется в config/api_key_notion.txt (не коммитится).",
+                         en: "For Notion export. Saved to config/api_key_notion.txt (never committed)."}
+  notion_key_saved:     {ru: "Ключ Notion сохранён в config/api_key_notion.txt",
+                         en: "Notion key saved to config/api_key_notion.txt"}
+
+  # --- tray export (Notion / Obsidian, from Live or a file) ---
+  tray_export:          {ru: "Экспорт",                     en: "Export"}
+  tray_export_live:     {ru: "Последняя диктовка",          en: "Last dictation"}
+  tray_export_file:     {ru: "Транскрипт…",                 en: "Transcript…"}
+  export_menu_hint:     {ru: "Экспорт транскриптов и записей WAV/M4A", en: "Export transcripts and WAV/M4A recordings"}
+  export_live_notion:   {ru: "Последняя диктовка → Notion",  en: "Last dictation → Notion"}
+  export_live_obsidian: {ru: "Последняя диктовка → Obsidian", en: "Last dictation → Obsidian"}
+  export_transcript_notion: {ru: "Транскрипт → Notion…",     en: "Transcript → Notion…"}
+  export_transcript_obsidian: {ru: "Транскрипт → Obsidian…", en: "Transcript → Obsidian…"}
+  live_record_hint:     {ru: "Нажмите, чтобы включить или выключить Live-диктовку. Текст появляется в журнале только после диктовки.",
+                         en: "Click to enable or disable Live dictation. Text appears in the activity log only after dictation."}
+  export_nothing:       {ru: "Нечего выгружать — ничего не надиктовано.",
+                         en: "Nothing to export — no dictation yet."}
+  export_done:          {ru: "Экспортировано: {target}",    en: "Exported: {target}"}
+  export_failed:        {ru: "Экспорт не удался: {error}",  en: "Export failed: {error}"}
+  export_pick_json:     {ru: "Выберите транскрипт",         en: "Choose a transcript"}
+  transcript_files:     {ru: "Транскрипты (*.transcript.json)",
+                         en: "Transcripts (*.transcript.json)"}
+
+  # --- speaker rename (TZ §11) ---
+  speaker_rename:       {ru: "Переименование спикеров",      en: "Rename speakers"}
+  speaker_rename_action: {ru: "Переименовать спикеров",      en: "Rename speakers"}
+  speaker_rename_hint:  {ru: "Задайте реальные имена. Применится к JSON и существующим .md/.srt/.vtt/.txt.",
+                         en: "Assign real names. Applied to the JSON and existing .md/.srt/.vtt/.txt."}
+  speaker_rename_none:  {ru: "В транскрипте нет спикеров (диаризация выключена).",
+                         en: "No speakers in this transcript (diarization was off)."}
+  speaker_rename_done:  {ru: "Спикеры переименованы, обновлено файлов: {count}",
+                         en: "Speakers renamed, files updated: {count}"}
+  speaker_no_transcript: {ru: "У этого файла нет .transcript.json — сначала транскрибируйте.",
+                          en: "This file has no .transcript.json — transcribe it first."}
+
+  # --- module installer (Voice AI modules) ---
+  modules:              {ru: "Установки",                   en: "Setup"}
+  modules_title:        {ru: "Установка модулей Voice AI",  en: "Install Voice AI modules"}
+  capabilities_title:   {ru: "Готовность режимов",          en: "Mode readiness"}
+  cap_ready:            {ru: "Готово",                      en: "Ready"}
+  cap_partial:          {ru: "Частично",                    en: "Partial"}
+  cap_missing:          {ru: "Нет",                         en: "Missing"}
+  cap_openai:           {ru: "OpenAI",                      en: "OpenAI"}
+  cap_openai_desc:      {ru: "Облачная транскрибация и постобработка.", en: "Cloud transcription and post-processing."}
+  cap_ffmpeg:           {ru: "FFmpeg",                      en: "FFmpeg"}
+  cap_ffmpeg_desc:      {ru: "Приём и подготовка аудио/видео файлов.",  en: "Media ingest and audio preparation."}
+  cap_live:             {ru: "Live",                        en: "Live"}
+  cap_live_desc:        {ru: "Микрофон и потоковая диктовка.", en: "Microphone and streaming dictation."}
+  cap_whisper:          {ru: "Local Whisper",               en: "Local Whisper"}
+  cap_whisper_desc:     {ru: "Локальный faster-whisper/CPU слой.", en: "Local faster-whisper/CPU layer."}
+  cap_gigaam:           {ru: "GigaAM ONNX",                 en: "GigaAM ONNX"}
+  cap_gigaam_desc:      {ru: "Русская локальная модель через onnx-asr и ONNX Runtime.", en: "Russian local model through onnx-asr and ONNX Runtime."}
+  cap_vulkan:           {ru: "whisper.cpp",                 en: "whisper.cpp"}
+  cap_vulkan_desc:      {ru: "Портативный whisper.cpp: Live использует CPU fallback, Studio может использовать CUDA/cuBLAS.", en: "Portable whisper.cpp: Live uses CPU fallback; Studio can use CUDA/cuBLAS."}
+  cap_cuda:             {ru: "CUDA",                        en: "CUDA"}
+  cap_cuda_desc:        {ru: "Резидентный whisper.cpp/cuBLAS с Large V2; torch/pyannote нужны только для диаризации.", en: "Resident whisper.cpp/cuBLAS with Large V2; torch/pyannote are only needed for diarization."}
+  cap_check_openai_key: {ru: "OpenAI key",                  en: "OpenAI key"}
+  cap_check_ffmpeg:     {ru: "ffmpeg.exe",                  en: "ffmpeg.exe"}
+  cap_check_ffprobe:    {ru: "ffprobe.exe",                 en: "ffprobe.exe"}
+  cap_check_sounddevice: {ru: "sounddevice",                en: "sounddevice"}
+  cap_check_websockets: {ru: "websockets",                  en: "websockets"}
+  cap_check_onnx_asr:   {ru: "onnx-asr",                    en: "onnx-asr"}
+  cap_check_onnxruntime: {ru: "ONNX Runtime",               en: "ONNX Runtime"}
+  cap_check_gigaam_payload: {ru: "GigaAM v3 payload",       en: "GigaAM v3 payload"}
+  cap_check_faster_whisper: {ru: "faster-whisper",          en: "faster-whisper"}
+  cap_check_ctranslate2: {ru: "CTranslate2",                en: "CTranslate2"}
+  cap_check_whispercpp_binary: {ru: "whisper.cpp binary",   en: "whisper.cpp binary"}
+  cap_check_whispercpp_manifest: {ru: "Манифест полного pack", en: "Full-pack manifest"}
+  cap_check_whispercpp_server: {ru: "Резидентный whisper.cpp server", en: "Resident whisper.cpp server"}
+  cap_check_whispercpp_payloads: {ru: "Общие DLL whisper.cpp", en: "Common whisper.cpp DLLs"}
+  cap_check_whispercpp_backend: {ru: "DLL выбранного backend", en: "Selected-backend DLLs"}
+  cap_check_whispercpp_cuda_runtime: {ru: "Полный CUDA/cuBLAS pack", en: "Complete CUDA/cuBLAS pack"}
+  cap_check_whispercpp_vulkan_backend: {ru: "GPU backend files (optional)", en: "GPU backend files (optional)"}
+  cap_check_whispercpp_model: {ru: "Turbo model",           en: "Turbo model"}
+  cap_check_model_small: {ru: "Small model (optional)",     en: "Small model (optional)"}
+  cap_check_model_turbo: {ru: "Turbo model",                en: "Turbo model"}
+  cap_check_model_large_v2: {ru: "Модель Large V2",          en: "Large V2 model"}
+  cap_check_nvidia_smi: {ru: "nvidia-smi",                  en: "nvidia-smi"}
+  cap_check_torch:      {ru: "torch",                       en: "torch"}
+  cap_check_pyannote:   {ru: "pyannote",                    en: "pyannote"}
+  api_key_name:         {ru: "Ключ API OpenAI",            en: "OpenAI API key"}
+  api_key_desc:         {ru: "Сохраняется в config/api_key_openai.txt (не коммитится).",
+                         en: "Saved to config/api_key_openai.txt (never committed)."}
+  api_key_enter:        {ru: "Ввод ключа",                  en: "Enter key"}
+  api_key_prompt:       {ru: "Вставьте ключ API OpenAI (sk-…):",
+                         en: "Paste your OpenAI API key (sk-…):"}
+  api_key_set:          {ru: "Задан",                       en: "Set"}
+  api_key_missing:      {ru: "Не задан",                    en: "Not set"}
+  api_key_saved:        {ru: "Ключ OpenAI сохранён в config/api_key_openai.txt",
+                         en: "OpenAI key saved to config/api_key_openai.txt"}
+  xai_key_name:         {ru: "Ключ API xAI",               en: "xAI API key"}
+  xai_key_desc:         {ru: "Для xAI Grok STT в файлах и Live. Сохраняется в config/api_key_xai.txt.",
+                         en: "For xAI Grok STT in Files and Live. Saved to config/api_key_xai.txt."}
+  xai_key_prompt:       {ru: "Вставьте ключ API xAI:",
+                         en: "Paste your xAI API key:"}
+  xai_key_saved:        {ru: "Ключ xAI сохранён в config/api_key_xai.txt",
+                         en: "xAI key saved to config/api_key_xai.txt"}
+  elevenlabs_key_name:  {ru: "Ключ API ElevenLabs",        en: "ElevenLabs API key"}
+  elevenlabs_key_desc:  {ru: "Для Scribe realtime/live. Сохраняется в config/api_key_elevenlabs.txt.",
+                         en: "For Scribe realtime/live. Saved to config/api_key_elevenlabs.txt."}
+  elevenlabs_key_prompt: {ru: "Вставьте ключ API ElevenLabs:",
+                          en: "Paste your ElevenLabs API key:"}
+  elevenlabs_key_saved: {ru: "Ключ ElevenLabs сохранён в config/api_key_elevenlabs.txt",
+                         en: "ElevenLabs key saved to config/api_key_elevenlabs.txt"}
+  modules_log_hint:     {ru: "Здесь появится вывод установки…", en: "Installer output will appear here…"}
+  mic_check_title:      {ru: "Проверка микрофона",          en: "Microphone check"}
+  mic_check_desc:       {ru: "Проверяет устройства записи/связи, оба канала stereo-пар и нативные 44,1/48 кГц. Аудио не сохраняется.",
+                         en: "Checks recording/communications devices, both channels of stereo pairs, and native 44.1/48 kHz modes. Audio is not saved."}
+  mic_check_button:     {ru: "Проверить",                   en: "Check"}
+  mic_check_idle:       {ru: "После Live deps можно проверить системный вход.", en: "After Live deps, check the system input."}
+  mic_check_running:    {ru: "Проверяю микрофон…",          en: "Checking microphone…"}
+  mic_check_ready:      {ru: "Микрофон готов: устройств {count}; вход: {device}; {details}",
+                         en: "Microphone ready: {count} device(s); input: {device}; {details}"}
+  mic_check_partial:    {ru: "Микрофон частично готов: устройств {count}; вход: {device}; {details}",
+                         en: "Microphone partially ready: {count} device(s); input: {device}; {details}"}
+  mic_check_failed:     {ru: "Микрофон найден, но поток записи не открылся: {error}. Проверьте выбранное устройство ввода, эксклюзивный режим и доступ классических приложений к микрофону.",
+                         en: "Microphone found, but the recording stream did not open: {error}. Check the selected input device, exclusive mode, and desktop app microphone access."}
+  mic_check_no_devices: {ru: "Устройства ввода не найдены. Проверьте микрофон в Windows: Параметры → Система → Звук → Ввод.",
+                         en: "No input devices found. Check the microphone in Windows: Settings → System → Sound → Input."}
+  mic_check_missing_sounddevice: {ru: "sounddevice не установлен. Сначала выполните Live deps.",
+                                  en: "sounddevice is not installed. Run Live deps first."}
+  close:                {ru: "Закрыть",                     en: "Close"}
+  mod_install:          {ru: "Установить",                  en: "Install"}
+  mod_reinstall:        {ru: "Переустановить",              en: "Reinstall"}
+  mod_restore:          {ru: "Восстановить",                en: "Restore"}
+  mod_installed:        {ru: "Установлен",                  en: "Installed"}
+  mod_not_installed:    {ru: "Не установлен",               en: "Not installed"}
+  mod_installing:       {ru: "Установка: {name}…",          en: "Installing: {name}…"}
+  mod_done_ok:          {ru: "Готово: {name}.",             en: "Done: {name}."}
+  mod_done_fail:        {ru: "Ошибка установки: {name} (код {code}).",
+                         en: "Install failed: {name} (exit {code})."}
+  install_progress_idle: {ru: "Прогресс установки",         en: "Install progress"}
+  install_progress_running: {ru: "Установка: {name}",       en: "Installing: {name}"}
+  install_progress_waiting: {ru: "Ожидание данных прогресса…", en: "Waiting for progress data…"}
+  install_progress_done: {ru: "Установка завершена.",       en: "Install completed."}
+  install_profile_title: {ru: "Рекомендуемая установка",     en: "Recommended setup"}
+  install_profile_checking: {ru: "Проверяем этот компьютер…", en: "Checking this computer..."}
+  install_profile_wait: {ru: "Сейчас покажем, какие пункты стоит ставить именно здесь.",
+                         en: "We will show which items fit this machine."}
+  install_profile_progress: {ru: "Проверяем: {stage}",       en: "Checking: {stage}"}
+  install_profile_failed: {ru: "Не удалось проверить компьютер: {error}",
+                           en: "Could not check this computer: {error}"}
+  install_profile_gpu_none: {ru: "GPU не найден",            en: "No GPU found"}
+  install_profile_summary: {ru: "Найдено: {gpu}. Лучший профиль: {profile}.",
+                            en: "Detected: {gpu}. Best profile: {profile}."}
+  install_profile_studio_nvidia: {ru: "быстрая обработка файлов на NVIDIA",
+                                  en: "fast file processing on NVIDIA"}
+  install_profile_windows_gpu: {ru: "лёгкий GPU-режим Windows",
+                                en: "light Windows GPU mode"}
+  install_profile_cpu: {ru: "резервный режим CPU",           en: "CPU fallback"}
+  install_profile_plan_studio_nvidia: {ru: "Ставьте пункты с меткой «Рекомендуется»: длинные файлы и разметка спикеров пойдут через видеокарту, а Live-диктовка останется на лёгком Windows-режиме.",
+                                       en: "Install items marked Recommended: long files and speaker labels use the graphics card, while Live dictation stays on the light Windows path."}
+  install_profile_plan_windows_gpu: {ru: "Ставьте пункты с меткой «Рекомендуется»: Audion будет использовать Windows GPU-ускорение и оставит CPU как запасной путь.",
+                                     en: "Install items marked Recommended: Audion will use Windows GPU acceleration and keep CPU as a fallback."}
+  install_profile_plan_cpu: {ru: "Ставьте пункты с меткой «Рекомендуется»: Audion будет работать без GPU-ускорения; тяжёлые GPU-модули здесь не нужны.",
+                             en: "Install items marked Recommended: Audion will run without GPU acceleration; heavy GPU modules are not useful here."}
+  install_profile_plan_safe: {ru: "Показываем безопасные рекомендации. Если видеокарта есть, GPU-пункты можно запустить вручную.",
+                              en: "Showing safe recommendations. If this machine has a GPU, GPU items can still be run manually."}
+  mod_rec_recommended: {ru: "Рекомендуется",                 en: "Recommended"}
+  mod_rec_optional:    {ru: "По желанию",                    en: "Optional"}
+  mod_rec_not_needed:  {ru: "Не нужно",                      en: "Not needed"}
+  mod_wheel_cache:      {ru: "Кэш зависимостей",            en: "Dependency wheel cache"}
+  mod_wheel_cache_desc: {ru: "Скачивает локальные wheels для GigaAM/ONNX Runtime, чтобы движки ставились предсказуемо.",
+                         en: "Downloads local wheels for GigaAM/ONNX Runtime so engines install predictably."}
+  mod_ffmpeg:           {ru: "Портативный FFmpeg",          en: "Portable FFmpeg"}
+  mod_ffmpeg_desc:      {ru: "Извлечение и нарезка аудио из видео/аудио. Нужен для обработки файлов.",
+                         en: "Extracts and chunks audio from media. Required for file processing."}
+  mod_live:             {ru: "Live-диктовка (микрофон)",    en: "Live dictation (microphone)"}
+  mod_live_desc:        {ru: "Захват микрофона для push-to-talk диктовки из трея (sounddevice).",
+                         en: "Microphone capture for push-to-talk dictation from the tray (sounddevice)."}
+  mod_gigaam:           {ru: "GigaAM ONNX pack",            en: "GigaAM ONNX pack"}
+  mod_gigaam_desc:      {ru: "onnx-asr + ONNX Runtime provider + прогрев GigaAM v3 CTC/RNN-T payloads.",
+                         en: "onnx-asr + ONNX Runtime provider + preloaded GigaAM v3 CTC/RNN-T payloads."}
+  mod_restore_intel:    {ru: "Восстановить Audion Voice AI для Intel/AMD GPU",
+                         en: "Restore Audion Voice AI for Intel/AMD GPU"}
+  mod_restore_intel_desc: {ru: "Переустанавливает GigaAM ONNX provider в DirectML. Используйте после переноса CUDA/RTX-пакета на Intel/AMD/обычный Windows GPU.",
+                         en: "Reinstalls the GigaAM ONNX provider as DirectML. Use after moving a CUDA/RTX package to Intel/AMD/general Windows GPU."}
+  mod_restore_rtx:      {ru: "Восстановить Audion Voice AI для RTX CUDA",
+                         en: "Restore Audion Voice AI for RTX CUDA"}
+  mod_restore_rtx_desc: {ru: "Переустанавливает GigaAM ONNX provider в CUDA-capable onnxruntime-gpu. Диаризация torch/pyannote устанавливается отдельно и необязательна.",
+                         en: "Reinstalls the GigaAM ONNX provider as CUDA-capable onnxruntime-gpu. Torch/pyannote diarization is separate and optional."}
+  mod_vulkan:           {ru: "whisper.cpp pack",            en: "whisper.cpp pack"}
+  mod_vulkan_desc:      {ru: "Локальный whisper.cpp: Live CPU fallback, Studio CUDA/cuBLAS GPU pack.",
+                         en: "Local whisper.cpp: Live CPU fallback, Studio CUDA/cuBLAS GPU pack."}
+  mod_whisper:          {ru: "Локальный Whisper (CPU)",     en: "Local Whisper (CPU)"}
+  mod_whisper_desc:     {ru: "Офлайн-распознавание без облака (faster-whisper). Режим «Локально (CPU)».",
+                         en: "Offline transcription without the cloud (faster-whisper). CPU compute mode."}
+  mod_whispercpp_models: {ru: "Модель whisper.cpp Large V2", en: "whisper.cpp Large V2 model"}
+  mod_whispercpp_models_desc: {ru: "Скачивает ggml-large-v2.bin — основную русскую модель файлового распознавания Studio. Turbo остаётся дополнительным быстрым профилем.",
+                         en: "Downloads ggml-large-v2.bin, Studio's primary Russian file-transcription model. Turbo remains an optional fast profile."}
+  mod_gpu:              {ru: "Диаризация на GPU",           en: "GPU diarization"}
+  mod_gpu_desc:         {ru: "torch (CUDA) + pyannote для разметки спикеров. Нужна видеокарта NVIDIA.",
+                         en: "torch (CUDA) + pyannote for speaker labels. Requires an NVIDIA GPU."}
+
+  # --- subtitles ---
+  subtitles:            {ru: "Субтитры",                    en: "Subtitles"}
+  include_speakers:     {ru: "Имена спикеров в субтитрах",  en: "Include speaker names"}
+  max_chars_per_line:   {ru: "Макс. символов в строке",     en: "Max chars per line"}
+  max_lines:            {ru: "Макс. строк",                 en: "Max lines"}
+  min_duration:         {ru: "Мин. дл., с",                 en: "Min duration, s"}
+  max_duration:         {ru: "Макс. дл., с",                en: "Max duration, s"}

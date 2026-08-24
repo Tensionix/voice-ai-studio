@@ -1,0 +1,872 @@
+[
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "515292cac6b24e7e487b829330e23ea48e31c6255d328d9ba737cd9a77b0dfd7",
+    "legal_document_hashes": [
+      "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+    ]
+  },
+  {
+    "name": "anyio",
+    "version": "4.14.2",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "6ff75a3027473f1c9e1241717c2c9956ab04364ef7fd1771894cbd1116fac120",
+    "legal_document_hashes": [
+      "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "75854d6691e0cda20736f702fe1fa47b6f29cd0a338b715cb1e3193dde39049d",
+    "legal_document_hashes": [
+      "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    ]
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "621d1968bc8c748ef820e711cd4f0b06abd0c3c79cb095e1650a260a72cbf4c1",
+    "legal_document_hashes": [
+      "1d2438cadca31cb11257f8440703766e42c995202aa27e7f629f9a79a8b5c07f"
+    ]
+  },
+  {
+    "name": "click",
+    "version": "8.4.2",
+    "license": "BSD-3-Clause",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "7fc3839a526ea45cd718696779a1df884e60c40dfc7981db0c38e4c84c5836ab",
+    "legal_document_hashes": [
+      "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    ]
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6",
+    "license": "License :: OSI Approved :: BSD License",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "d5b2b110783d76edffb5d79fefee03f2a111e650ccec3e47be06bdb3daa944f5",
+    "legal_document_hashes": [
+      "cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318"
+    ]
+  },
+  {
+    "name": "coloredlogs",
+    "version": "15.0.1",
+    "license": "MIT",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "c3074e6113dee00cdc0b29ce3f21429ad70ac312c81c07e46dba6e4d367ec055",
+    "legal_document_hashes": [
+      "0bef4ffb1855b65570304f2018c6d44e4bab97bd5df8716ecd7800014d717267"
+    ]
+  },
+  {
+    "name": "FFmpeg",
+    "version": "8.0.1-full_build-www.gyan.dev",
+    "license": "GPL v3",
+    "source": "optional-tool",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "0de1c6400a6445aac7e5c83e29a057eb7d82944813b92a2c86d7337dc40648a9",
+    "legal_document_hashes": [
+      "32cc15d484d7e472e70962d1c991829fd266d287f1023b0f0f9c941fc5e1cfae",
+      "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad"
+    ]
+  },
+  {
+    "name": "filelock",
+    "version": "3.32.4",
+    "license": "MIT",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "02d640e4c258dfbb2a8fdcca33ee1ca78db115fdc5d987acbbe6b525e1f9f475",
+    "legal_document_hashes": [
+      "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+    ]
+  },
+  {
+    "name": "flatbuffers",
+    "version": "25.12.19",
+    "license": "Apache-2.0",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "0cff4db47984a398db118a7495b583389a2dacdf38c4b80c2c8bac1b9b620149",
+    "legal_document_hashes": [
+      "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+    ]
+  },
+  {
+    "name": "fsspec",
+    "version": "2026.7.0",
+    "license": "BSD-3-Clause",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "2fbadb18dabaf571d5850bba71d3c9b4ae5975e62939ac13c40ead2c81e33bfd",
+    "legal_document_hashes": [
+      "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+    ]
+  },
+  {
+    "name": "fzf",
+    "version": "bundled",
+    "license": "MIT",
+    "source": "baseline-tool",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "bf922c015772507627d2c31ca50843b51513316f59809753d8e79dc33501bc74",
+    "legal_document_hashes": [
+      "a296f423c0d30ce3581435e78e7e36c5fe73984a882d8720c72e713b4593588b"
+    ]
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "ae4509e334f4668d5ec07aa79aca15fd3a3ea0bd4eebd231d13a8b132ed7b7f9",
+    "legal_document_hashes": [
+      "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+    ]
+  },
+  {
+    "name": "hf-xet",
+    "version": "1.6.0",
+    "license": "Apache-2.0",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "2e18fa321951502a0735e19c8510097c34c0456e0c1810dacec52e72df5cc321",
+    "legal_document_hashes": [
+      "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+    ]
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "fe604c9125281ce34d3414fbf6123f0484950318eb61ad57ba84b9969808e218",
+    "legal_document_hashes": [
+      "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+    ]
+  },
+  {
+    "name": "httpcore2",
+    "version": "2.12.0",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "a80236b75794f955cff29b1ac3180ba447dad2a728046d320d87b2fe05a31931",
+    "legal_document_hashes": [
+      "c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9"
+    ]
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "9130af16d06a1dcb6415401e2d88b0c8d79852a79d2faa7bdca4867ab0af3467",
+    "legal_document_hashes": [
+      "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+    ]
+  },
+  {
+    "name": "httpx2",
+    "version": "2.12.0",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "0467efa1426334d8bfec3209f404f42614a2659dbcf8f64777eb7829fa853d1a",
+    "legal_document_hashes": [
+      "7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30"
+    ]
+  },
+  {
+    "name": "huggingface_hub",
+    "version": "1.28.0",
+    "license": "Apache-2.0",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "3d559482c3bcee17f2c0c7e90fa5d3fa9ee4625c6954560594de9ac5adaff2f9",
+    "legal_document_hashes": [
+      "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a"
+    ]
+  },
+  {
+    "name": "humanfriendly",
+    "version": "10.0",
+    "license": "MIT",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "2ec15c087338652c1caad85bf0acdcbf333bbdacf56a0d0da553f0cf4a42518c",
+    "legal_document_hashes": [
+      "4ac48f4117809f2734066150450f120b3bb110ac1d3b32170795e0560dbbc1f5"
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.19",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "d12132f39d3ab0208ec1dcbf4d1f9fede860fc89701a6697c0e7fc9d5c37563e",
+    "legal_document_hashes": [
+      "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    ]
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "0fedc61afba6e82fefd9ca319ed4c1e15c80bce64546704d128bbafb7ab90a99",
+    "legal_document_hashes": [
+      "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    ]
+  },
+  {
+    "name": "jiter",
+    "version": "0.16.0",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "da1f0683a01fc05fd5ea1cdebebe974b622c198f2dbbb8d7f661d2f57c1d89d8",
+    "legal_document_hashes": [
+      "7c7134b9f7b978c03fca875517cf398db91f19bbb8109b6685e742aa3f57468e"
+    ]
+  },
+  {
+    "name": "mpmath",
+    "version": "1.3.0",
+    "license": "BSD",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "003a5df6fb3860cd4b262244462eeec275cc2fd410840ad55c8d2c275c1a1272",
+    "legal_document_hashes": [
+      "c26cae81da4508e5e249985777a33821f183223ebb74d7f8cfbf90fe7eef2fb7"
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.3.5",
+    "license": "License :: OSI Approved :: BSD License",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "a9f895c998dacd428f43645faaa25cb119a840913992f85e329e6bc7f03fe4c4",
+    "legal_document_hashes": [
+      "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "1900269b4c2f0ff0c7ad01ecf13f5ded5610968a0cf1fb6bc3a83bccc2b4c38d",
+      "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910",
+      "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98",
+      "4a765ceefcddd40d6518f2f22f0fe2c6d532890be821d8bb1f2c21ebafed8817",
+      "5f6ed77cd0326d7a2598962550123657845db4e8095ee29904f70e2717c0816e",
+      "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800",
+      "82606ac1b37d264a2260639f8a1646f2a66b713941447e01362e1fef587b73a8",
+      "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f",
+      "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55",
+      "a7a1034ce1018ae36675f3e4c85f07854e4cc9ac87c1d0252e75002d52ec95e4",
+      "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056",
+      "ace82ab500d229f26ee3ce7646f0184fd4ba9a3774c1169ca97fa00b726e24b7",
+      "b8b1fae5894cfbe213b47f1378bb2269cf82de18b34447e871c0225ace0d3ad7",
+      "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9",
+      "d7e9361b9533f48dd1e60ff7e4ab4dd1b53230ca2d4bf8d79bf3efa5f53336be",
+      "ef21afaad4bb20d2020491dc27ed55ba0d042f1b9487911a57f28b46b407a2b7",
+      "f419e990887622d00595611ea5da8497b906ab63ba868ed1f3d7b0384287e113",
+      "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+    ]
+  },
+  {
+    "name": "nvidia-cublas-cu12",
+    "version": "12.9.2.10",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "243cd7f23fcea4bc6dba682896b3331a71edd8f9302d5840d7cea6d374bb8869",
+    "legal_document_hashes": [
+      "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd"
+    ]
+  },
+  {
+    "name": "nvidia-cuda-nvrtc-cu12",
+    "version": "12.9.86",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "d3c65e3a58f7b76bd986fe66d9b8892e55e647a54ad4771ab251656ac4169879",
+    "legal_document_hashes": [
+      "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd"
+    ]
+  },
+  {
+    "name": "nvidia-cuda-runtime-cu12",
+    "version": "12.9.79",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "769693ee156b77cadffbd3409233d2734f8a22f6ee03190f51d1617fb8e1170b",
+    "legal_document_hashes": [
+      "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd"
+    ]
+  },
+  {
+    "name": "nvidia-cudnn-cu12",
+    "version": "9.24.0.43",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "1555bdba1b4f6e8207e199aeb61e8172ca736bad53bf2f58061409eb57f9a7d8",
+    "legal_document_hashes": [
+      "ae2b7a72b3b54d9cfe7b234bfab5a42894631093133247fad7edb21261d7f7c4"
+    ]
+  },
+  {
+    "name": "nvidia-cufft-cu12",
+    "version": "11.4.1.4",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "82926cf26e2f1ee57d8d447d02132c1724b301e8e057804fba57bc61bc0108be",
+    "legal_document_hashes": [
+      "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd"
+    ]
+  },
+  {
+    "name": "nvidia-curand-cu12",
+    "version": "10.3.10.19",
+    "license": "NVIDIA Proprietary Software",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "cf09d2dc6ec7a3ca6b45b480bf8cde2f73de822f4f2494a2f0755ceaeab152d1",
+    "legal_document_hashes": [
+      "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd"
+    ]
+  },
+  {
+    "name": "nvidia-nvjitlink-cu12",
+    "version": "12.9.86",
+    "license": "LicenseRef-NVIDIA-Proprietary",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "ce1d0b7c19e28d0f3d9a810d9efb0b84af7b3a4fa3c040d085acedc41a6912d9",
+    "legal_document_hashes": [
+      "ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd"
+    ]
+  },
+  {
+    "name": "onnx-asr",
+    "version": "0.12.0",
+    "license": "MIT",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "3bd897d69217993e515f44f3f035b90304b2bb4e088cd1837eed026e9c3ff95d",
+    "legal_document_hashes": [
+      "9313d2b456239c74d90ae38dc665168ccdd01ca74bef93a79e7ee2e5c579b3b6"
+    ]
+  },
+  {
+    "name": "onnxruntime",
+    "version": "1.29.0",
+    "license": "MIT",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "6553a6aae2d851113cc73086ac11fcf12b857de6fb5662eafce6eabe6b031f67",
+    "legal_document_hashes": [
+      "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "7df20dcdf9197e9945c14858d41c60f11b52b93e5b69e2b63416b874d598d322",
+      "f3086bf07259feda14d37b271a0fc6b5e76b410fbbc695900537f77e50d34ba7"
+    ]
+  },
+  {
+    "name": "onnxruntime-directml",
+    "version": "1.24.4",
+    "license": "MIT License",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "2184bbe7ff90d69ef013c6d9a0768e642926d45d43a760524338a05b56850717",
+    "legal_document_hashes": [
+      "0e07b95f3a8d6230037707c5c4a2b554d12c4cb67369669ac255635528ffcee2",
+      "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    ]
+  },
+  {
+    "name": "onnxruntime-gpu",
+    "version": "1.22.0",
+    "license": "MIT License",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "2ac59bb2a16407cb1dd2a84ef628d25905f228e045bd04968b2e923ead07c35c",
+    "legal_document_hashes": [
+      "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "e9e90971a8e75a9a8ac0c6412e29c1202d079998389915aa485f46c816c3b4cc"
+    ]
+  },
+  {
+    "name": "openai",
+    "version": "3.3.1",
+    "license": "Apache-2.0",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "35f120f2a1034e8d118262ff78555738f01cdee14739c36e572ba32a7ab7caef",
+    "legal_document_hashes": [
+      "154759c1e9eb58e42643ee43ec59d556def4d1d702d911a484c469e02f85dd5d",
+      "fb34962916248c2e011077fb64b82d585814631bd291f2b78e37eccea9a9fe78"
+    ]
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "34949e94d374d777e3a75b17dce7f63af384f7a08e941ba666a3745f38b9a568",
+    "legal_document_hashes": [
+      "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec",
+      "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    ]
+  },
+  {
+    "name": "pip",
+    "version": "26.2.1",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "8046bf7158e104c73acea8360fb24abf0244a321c6ad8c398e359a7f34ed3b58",
+    "legal_document_hashes": [
+      "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686",
+      "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+      "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154",
+      "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+      "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca",
+      "4eb1fb1705e2def898e81bcba19c3aac80620d27ba3569d6a6df7b4629d1b5c2",
+      "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+      "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d",
+      "81932e77fef4cec306da54caf7d4d221dfd0f6fb6da214c712e36cb95ac47906",
+      "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+      "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b",
+      "9e98249234446e96ab6cd2ac59cbb2f7bfcb15a8e21a00548e1e14da939b6927",
+      "a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae",
+      "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+      "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+      "bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec",
+      "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15",
+      "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+      "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+    ]
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "d4dc1fc43b633b5e6d170e7dae5cfd87b32df4271ac2317b49cfe94ed72a4eaf",
+    "legal_document_hashes": [
+      "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    ]
+  },
+  {
+    "name": "protobuf",
+    "version": "7.36.0",
+    "license": "3-Clause BSD License",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "174f743a4f25255267b9345d075fa53716baec54c2494f3a16b3ecfa91b4ed5e",
+    "legal_document_hashes": [
+      "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+    ]
+  },
+  {
+    "name": "pycparser",
+    "version": "3.0",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "1ea81b8aa4f84d7bb44c11ca399840849bea1932611038dd258b527bb5bd1616",
+    "legal_document_hashes": [
+      "b345a9762fdc5175d3d486d344cdcbb79078aee7c00e47fcc756ef2c4f5dcb61"
+    ]
+  },
+  {
+    "name": "pydantic",
+    "version": "2.13.4",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "d0f89ffbd0ccea45897a368a7e6430696ec5bbaa97e8a06039fac4e097a15d5b",
+    "legal_document_hashes": [
+      "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+    ]
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.46.4",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "1d6384a2b10e57251fa55bd66050464dd6fb47799dc9d6b0d576126b28fb0e6c",
+    "legal_document_hashes": [
+      "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+    ]
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license": "BSD-2-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "34fc6b35d0f369eeedd6cad47d2c475977e4d399cb1c3d401bf9789a3de2bee7",
+    "legal_document_hashes": [
+      "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+      "ea74b9158f4587191549080d5713701859bf6f7b61ce491020338128131847f3"
+    ]
+  },
+  {
+    "name": "pyreadline3",
+    "version": "3.5.6",
+    "license": "BSD",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "ad8d288121f9717d3f413026b3a89a44c2a3ae4f5544a873e42bd50379193101",
+    "legal_document_hashes": [
+      "b8b132a8cafda6dd54d348bf4568e14b76cbc896d4dd2841f9d32c1709ddba7d"
+    ]
+  },
+  {
+    "name": "PySide6",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "c9fd5c25fdbf48b7e60450e4fc14dee2e62764f385f3bf886214ff8118724519",
+    "legal_document_hashes": [
+      "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    ]
+  },
+  {
+    "name": "PySide6_Addons",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "717d26a710526d180506133a5080b8e433292ae44b548cf2651b6ec292be1479",
+    "legal_document_hashes": [
+      "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    ]
+  },
+  {
+    "name": "PySide6_Essentials",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "51e9fceb6746042423f8b053ac0c8bb0e2b5da0b34098235fc16a9935b96c04e",
+    "legal_document_hashes": [
+      "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "fb678a9dadf97b8e75e38c500ec588a0e541c72ec04a62dbbd24a28b0c3720ff",
+    "legal_document_hashes": [
+      "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    ]
+  },
+  {
+    "name": "Python Embedded",
+    "version": "3.12.x",
+    "license": "PSF License Version 2 and bundled third-party notices",
+    "source": "baseline-runtime",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "4981dfd483e5fa3c286442d1cd83ec943faee1376ae30dd446ec6a802ec29130",
+    "legal_document_hashes": [
+      "f6fa51e9cc3f0a1ffad26fadc951585b6d0235677e5766ecc2de1aa4ef7ebac5"
+    ]
+  },
+  {
+    "name": "python-slugify",
+    "version": "8.0.4",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "032e9e6b0682d9d9286bc7c0627057e165feed2f20dc67cc7a6c0e67e95ecdd4",
+    "legal_document_hashes": [
+      "30ba4dc69a9f4dce132dd703937c7a93b573e2524604d2d5f92c5066514c0d4f"
+    ]
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "cdc2e75a1a27365cd69180c6b4b0e38f2817db57f2fc133cec45ea3f37c5ed2a",
+    "legal_document_hashes": [
+      "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4"
+    ]
+  },
+  {
+    "name": "shiboken6",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "07bc43a345849d4484d87ce4047dd217758b99c79f79d927bd3d864a31019b3d",
+    "legal_document_hashes": [
+      "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    ]
+  },
+  {
+    "name": "sniffio",
+    "version": "1.3.1",
+    "license": "MIT OR Apache-2.0",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "2d6daf5fb841d6a4835ab20ce0af122ee01d2782480ae98b3a22f56e40d7522a",
+    "legal_document_hashes": [
+      "3e6dae555eb92787fc82d1d48355677f454c7f65aeb38d3f9e72bf9a3daf034b",
+      "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a",
+      "652c878488d1456361e08c3f8607fd7ba59892a14103d15cce4ff93c85b5cc8b"
+    ]
+  },
+  {
+    "name": "sounddevice",
+    "version": "0.5.5",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "277d0f195dc2334561a9f912ec66fd3515b40df8be589b55a4d7ebf7f3b0bcc8",
+    "legal_document_hashes": [
+      "b6eea21bbafbaf7a2177e492f1be6b5efc6f4e708b1980773de51cdaa52f8211"
+    ]
+  },
+  {
+    "name": "sympy",
+    "version": "1.14.0",
+    "license": "BSD",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "3d417207ff44b7bfcf0aa2a0c313e38f7028c5ba725b6bf3153782a2e058d8d0",
+    "legal_document_hashes": [
+      "007bc30a58fa40a996e772047120de4eaf31f5110e4f9c3b5f93fcdfbe2eaca1",
+      "82b1038521b0696c63c90b31ed4a0a2c9c4c16871c648b157b07ca44b6f18f8d",
+      "ea9b7901b93a0e360da655d75454527c26cbc835b42ee739f7b1018f81afcb1a"
+    ]
+  },
+  {
+    "name": "text-unidecode",
+    "version": "1.3",
+    "license": "Artistic License",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "bec0dc871f47b973c4bd7a339142c677b12b6e0fb0eab9b45f214b742743ceee",
+    "legal_document_hashes": [
+      "3938e7535c3e4ef7e6363de9b693fe3bafe3c4a5e5f4925cd48375096fe7afd5"
+    ]
+  },
+  {
+    "name": "tqdm",
+    "version": "4.70.0",
+    "license": "MPL-2.0 AND MIT",
+    "source": "wheelhouse",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "6563430c127eb39bc0ff8f18c1b195e7b96c7f6a1ff456e7d45e4d4b82fa9677",
+    "legal_document_hashes": [
+      "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+    ]
+  },
+  {
+    "name": "truststore",
+    "version": "0.10.4",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "b03d1d7ecf170ec26885ad91a66a9dcd39d2b31f0be8d9aae7daa5c142de7857",
+    "legal_document_hashes": [
+      "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "ef81f0f93b3e036ce317157c53bba2e2e7ce203e0f8c965cc103b5e5d39f9f51",
+    "legal_document_hashes": [
+      "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    ]
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license": "MIT",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "a7dbf9e0f4edecea00b8ef99d5473b314eca321684fc0b3f235192ef0d4ed736",
+    "legal_document_hashes": [
+      "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+    ]
+  },
+  {
+    "name": "websockets",
+    "version": "16.1",
+    "license": "BSD-3-Clause",
+    "source": "site-packages",
+    "license_files": [
+      "licenses/THIRD_PARTY_NOTICES.txt"
+    ],
+    "license_fingerprint": "42833599668b8ec760e4445ef5f57cc0deefed71febf2b12bcd6339b220ebe5e",
+    "legal_document_hashes": [
+      "3d6a0c050d8bec52fabad502e45fb25bd02bcadbd70dea34d447b6a0ff4e6da8"
+    ]
+  }
+]

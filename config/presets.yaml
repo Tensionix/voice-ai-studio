@@ -1,0 +1,46 @@
+schema_version: 1
+
+# Presets (TZ section 17). Each preset overrides a subset of app_settings.
+# Iteration 1 ships the catalog; GUI wiring lands with the PySide6 interface.
+
+presets:
+  russian_meeting:
+    label_ru: "Русская встреча"
+    language: ru
+    transcription: {diarize: true}
+    postprocessing: {generate_title: true, generate_summary: true, generate_tags: true, generate_action_items: true}
+    subtitles: {include_speakers: true}
+
+  interview:
+    label_ru: "Интервью"
+    language: auto
+    transcription: {diarize: true}
+    postprocessing: {generate_title: true, generate_summary: true, generate_tags: true}
+    subtitles: {include_speakers: true}
+
+  lecture:
+    label_ru: "Лекция"
+    language: auto
+    transcription: {diarize: false}
+    postprocessing: {generate_title: true, generate_summary: true, generate_tags: true, generate_action_items: false}
+
+  youtube_subtitles:
+    label_ru: "Субтитры YouTube"
+    language: auto
+    transcription: {diarize: false}
+    exports: {json: true, markdown: false, srt: true, vtt: true, txt: false}
+    postprocessing: {generate_title: false, generate_summary: false, generate_tags: false}
+
+  voice_note:
+    label_ru: "Голосовая заметка"
+    language: auto
+    transcription: {diarize: false}
+    exports: {json: true, markdown: true, srt: false, vtt: false, txt: true}
+    postprocessing: {generate_title: true, generate_summary: true, generate_tags: false}
+
+  raw_transcript:
+    label_ru: "Сырой транскрипт"
+    language: auto
+    transcription: {diarize: false}
+    exports: {json: true, markdown: true, srt: false, vtt: false, txt: true}
+    postprocessing: {generate_title: false, generate_summary: false, generate_tags: false, generate_action_items: false}

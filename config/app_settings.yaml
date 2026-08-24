@@ -1,0 +1,101 @@
+schema_version: 1
+edition: studio
+compute_mode: cuda
+language: auto
+ui_language: en
+ui_theme: graphite
+context: ''
+transcription:
+  diarize: true
+diarization:
+  enabled: true
+  gigaam_chunk_seconds: 45
+exports:
+  json: true
+  markdown: true
+  txt: false
+  srt: false
+  vtt: false
+subtitles:
+  max_chars_per_line: 10
+  max_lines: 4
+  min_duration: 0.6
+  max_duration: 11.5
+  include_speakers: false
+term_dictionary:
+- ИАС УГРТ
+- ФГИС ТП
+- КИПРР
+- ГП
+- ПТП
+- ПЗЗ
+- ЗОУИТ
+- КРТ
+- МНГП
+- РНГП
+- СТП
+- ССЭР
+postprocessing:
+  generate_title: true
+  generate_summary: true
+  generate_tags: true
+  generate_action_items: false
+  cleanup:
+    enabled: false
+    model: gpt-5.4-mini
+    prompt_id: builtin.cleanup.default
+pipeline:
+  skip_existing: true
+  force: false
+  save_next_to_source: true
+  recursive: true
+  chunk_seconds: 600
+  overlap_seconds: 0
+  normalize_audio: true
+  keep_workspace: false
+connectors:
+  obsidian:
+    enabled: false
+    vault_path: ''
+    subfolder: Transcripts
+  notion:
+    enabled: false
+    parent_type: page
+    parent_id: ''
+live:
+  enabled: true
+  prewarm_local: true
+  minimize_to_tray: true
+  hotkey: ralt+f12
+  toggle_hotkey: ''
+  mode: toggle
+  paste_method: clipboard
+  show_overlay: true
+  overlay_scale_percent: 70
+  language: auto
+  model: grok-transcribe
+  source: local
+  engine: vulkan
+  api:
+    provider: xai
+    mode: realtime
+    model: grok-transcribe
+    models:
+      openai: gpt-4o-mini-transcribe
+      xai: grok-transcribe
+      elevenlabs: scribe_v2_realtime
+  local:
+    engine: gigaam
+    model: gigaam-v3-e2e-ctc
+    backend: cpu
+    idle_unload_seconds: 0
+  layout_routing:
+    enabled: true
+    ru_model: gigaam-v3-e2e-ctc
+    en_model: turbo
+  cleanup:
+    enabled: false
+    model: gpt-5.4-mini
+    prompt_id: builtin.cleanup.default
+    sentence_threshold: 12
+  safety_timeout_minutes: 15

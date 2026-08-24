@@ -1,0 +1,17 @@
+# Audion Voice AI - base (API mode) dependencies. Intentionally light: no torch,
+# no whisper. Local/GPU stacks are opt-in via the dedicated install scripts.
+openai>=1.40
+pydantic>=2.6
+python-slugify>=8.0
+pyyaml>=6.0
+httpx>=0.27
+
+# GUI (iteration 2). The desktop interface, tray + Live overlay (iteration 3).
+PySide6>=6.6
+
+# Live dictation (iteration 3) is opt-in via install/Install-Live-Deps.cmd:
+#   sounddevice>=0.4    # mic capture for push-to-talk
+# The hotkey hook + auto-paste use the Windows API directly (no extra package).
+
+# Dev/test
+pytest>=8.0

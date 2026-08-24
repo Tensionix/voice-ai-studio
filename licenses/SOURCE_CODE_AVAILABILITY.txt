@@ -1,0 +1,57 @@
+SOURCE CODE AND UPSTREAM AVAILABILITY
+================================================================================
+
+Project: Audion Voice AI Studio (audion-voice-ai-studio)
+
+This file is generated from component profiles. It is an engineering
+record and does not replace review of the applicable license terms.
+
+BUNDLED COMPONENTS WITH SOURCE REFERENCES
+--------------------------------------------------------------------------------
+Component: certifi
+Version/profile: 2026.7.22
+Method: upstream_pin
+version: 2026.7.22
+url: https://pypi.org/project/certifi/2026.7.22/
+
+Component: FFmpeg
+Version/profile: 8.0.1-full_build-www.gyan.dev
+Method: bundled_archive
+version: 8.0.1-full_build-www.gyan.dev
+url: https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/894da5ca7d
+path: Tools\ffmpeg-8.0.1-source.tar.gz
+
+Component: PySide6
+Version/profile: 6.11.2
+Method: upstream_pin
+version: 6.11.2
+url: https://pypi.org/project/pyside6/6.11.2/
+
+Component: PySide6_Addons
+Version/profile: 6.11.2
+Method: upstream_pin
+version: 6.11.2
+url: https://pypi.org/project/pyside6-addons/6.11.2/
+
+Component: PySide6_Essentials
+Version/profile: 6.11.2
+Method: upstream_pin
+version: 6.11.2
+url: https://pypi.org/project/pyside6-essentials/6.11.2/
+
+Component: shiboken6
+Version/profile: 6.11.2
+Method: upstream_pin
+version: 6.11.2
+url: https://pypi.org/project/shiboken6/6.11.2/
+
+Component: tqdm
+Version/profile: 4.70.0
+Method: upstream_pin
+version: 4.70.0
+url: https://pypi.org/project/tqdm/4.70.0/
+
+
+OPTIONAL RUNTIME COMPONENTS
+--------------------------------------------------------------------------------
+No optional runtime source records registered.
