@@ -1,0 +1,35 @@
+# Portable runtime & tools (rebuilt by install scripts)
+/runtime/
+/Tools/
+/models/
+/install/download/      # embeddable python zip, get-pip, in-project pip cache + build temp
+/system_core/fzf.exe
+/system_core/_fzf_tmp/
+/._runtime/
+
+# Secrets
+/config/api_key_openai.txt
+/config/api_key_assemblyai.txt
+/config/api_key_huggingface.txt
+/config/api_key_notion.txt
+
+# Working data
+/workspace/
+/logs/
+/report/
+/output/
+/release/
+*.sqlite3
+*.sqlite3-journal
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.devlibs/          # dev-only deps (e.g. PySide6) for headless GUI testing
+
+# Sidecars accidentally dropped into input
+/input/**/*.transcript.json
+/input/**/*.srt
+/input/**/*.vtt
