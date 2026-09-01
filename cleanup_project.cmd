@@ -53,9 +53,9 @@ echo   %BASE_DIR%
 echo.
 echo This script returns the project to a clean source/workspace shape.
 echo It keeps source code, configs, docs, tests, launchers and install scripts.
-echo It clears install\wheels too; rebuild it from builder_main.cmd when needed.
+echo It clears wheelhouse too; rebuild it from builder_main.cmd when needed.
 echo It clears reproducible runtime payloads and generated working data:
-echo   - runtime, Tools, models, install\download and install\wheels contents
+echo   - runtime, Tools, models, install\download and wheelhouse contents
 echo   - system_core\fzf.exe and system_core\_fzf_tmp
 echo   - portable FFmpeg, GigaAM ONNX payloads, whisper.cpp/Vulkan, Python/pip caches
 echo   - input, output, logs, report, work, workspace, release contents
@@ -117,7 +117,7 @@ call :ClearDir "%BASE_DIR%\runtime"
 call :ClearDir "%BASE_DIR%\Tools"
 call :ClearDir "%BASE_DIR%\models"
 call :ClearDir "%BASE_DIR%\install\download"
-call :ClearDir "%BASE_DIR%\install\wheels"
+call :ClearDir "%BASE_DIR%\wheelhouse"
 
 call :RemoveDir "%BASE_DIR%\build"
 call :RemoveDir "%BASE_DIR%\dist"

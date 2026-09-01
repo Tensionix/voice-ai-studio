@@ -183,7 +183,7 @@ function Test-GigaAMPayloadCache {
 function Install-OnnxRuntimeProvider {
     param($ProviderSpec)
     Reset-OnnxRuntimePackages
-    $wheelDir = Join-Path $InstallDir ("wheels\" + $ProviderSpec.Kind)
+    $wheelDir = Join-Path $Root ("wheelhouse\" + $ProviderSpec.Kind)
     Invoke-Pip -Packages @($ProviderSpec.Package) -WheelDir $wheelDir
 }
 
@@ -281,7 +281,7 @@ Write-Step 2 "Upgrade pip"
 Invoke-Pip -Packages @("pip")
 
 Write-Step 3 "Install onnx-asr + Hugging Face Hub"
-$commonWheelDir = Join-Path $InstallDir "wheels\common"
+$commonWheelDir = Join-Path $Root "wheelhouse\common"
 Invoke-Pip -Packages @("onnx-asr>=0.11.0", "huggingface-hub>=1.0") -WheelDir $commonWheelDir
 
 $providerSpec = Resolve-ProviderPackage $Provider

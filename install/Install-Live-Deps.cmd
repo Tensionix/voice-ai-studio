@@ -5,7 +5,7 @@ chcp 65001 >nul
 setlocal EnableExtensions EnableDelayedExpansion
 set "ROOT=%~dp0.."
 set "PYEXE=%ROOT%\runtime\python.exe"
-set "WHEELDIR=%~dp0wheels\live"
+set "WHEELDIR=%ROOT%\wheelhouse\live"
 set "VERIFY=%~dp0Verify-Live-Deps.py"
 set "PIP_DISABLE_PIP_VERSION_CHECK=1"
 

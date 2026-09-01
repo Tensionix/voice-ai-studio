@@ -9,7 +9,7 @@ $ErrorActionPreference = "Stop"
 
 $InstallDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $PSCommandPath }
 $Root = (Resolve-Path (Join-Path $InstallDir "..")).Path
-$WheelRoot = Join-Path $InstallDir "wheels"
+$WheelRoot = Join-Path $Root "wheelhouse"
 $Tmp = Join-Path $InstallDir "download\tmp\wheel-cache"
 $PortablePython = Join-Path $Root "runtime\python.exe"
 

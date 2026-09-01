@@ -53,7 +53,7 @@
   },
   {
     "name": "click",
-    "version": "8.4.2",
+    "version": "8.5.0",
     "license": "BSD-3-Clause",
     "source": "wheelhouse",
     "license_files": [
@@ -106,7 +106,7 @@
   },
   {
     "name": "filelock",
-    "version": "3.32.4",
+    "version": "3.32.5",
     "license": "MIT",
     "source": "wheelhouse",
     "license_files": [
@@ -236,7 +236,7 @@
   },
   {
     "name": "huggingface_hub",
-    "version": "1.28.0",
+    "version": "1.29.0",
     "license": "Apache-2.0",
     "source": "wheelhouse",
     "license_files": [
@@ -492,7 +492,7 @@
   },
   {
     "name": "openai",
-    "version": "3.3.1",
+    "version": "3.6.0",
     "license": "Apache-2.0",
     "source": "site-packages",
     "license_files": [
@@ -567,7 +567,7 @@
   },
   {
     "name": "protobuf",
-    "version": "7.36.0",
+    "version": "7.36.1",
     "license": "3-Clause BSD License",
     "source": "wheelhouse",
     "license_files": [
@@ -593,7 +593,7 @@
   },
   {
     "name": "pydantic",
-    "version": "2.13.4",
+    "version": "2.13.5",
     "license": "MIT",
     "source": "site-packages",
     "license_files": [
@@ -606,7 +606,7 @@
   },
   {
     "name": "pydantic_core",
-    "version": "2.46.4",
+    "version": "2.46.5",
     "license": "MIT",
     "source": "site-packages",
     "license_files": [
