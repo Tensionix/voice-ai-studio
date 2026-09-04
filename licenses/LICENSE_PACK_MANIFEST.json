@@ -1,7 +1,7 @@
 {
   "schema": "audion.build_licenses.pack_manifest.v1",
-  "generated_utc": "2026-09-01T04:41:20Z",
-  "run_id": "20260901T044103Z_audion-voice-ai-studio_7257c1df",
+  "generated_utc": "2026-09-04T02:38:25Z",
+  "run_id": "20260904T023810Z_audion-voice-ai-studio_867aa5eb",
   "project_id": "audion-voice-ai-studio",
   "project_name": "Audion Voice AI Studio",
   "scan_root": "S:\\Release\\Audion Voice AI Studio",
@@ -9,28 +9,28 @@
   "files": [
     {
       "name": "THIRD_PARTY_NOTICES.txt",
-      "sha256": "727501c207427d15c70d48d3e238cdc427563557d29a52c41d7fb9bf1f83e32c",
-      "size": 1570170
+      "sha256": "50e2c69c45abb0f10235d3be392a76c8b6584e16e510548e4072c784d59270e4",
+      "size": 1445785
     },
     {
       "name": "SOURCE_CODE_AVAILABILITY.txt",
-      "sha256": "334cf468ea801b5d1bc358484f97436e5991814c36f23241f46f7cc96e7c6db3",
-      "size": 1634
+      "sha256": "87f517b852648961807ab384be58492e073aefd79e00f4da0fbc1d787d277198",
+      "size": 1086
     },
     {
       "name": "COMPONENTS.json",
-      "sha256": "e4ec6557120763ce4202c35037b4f106c1735a3f4045d16dcb87c3fc01b33656",
-      "size": 106390
+      "sha256": "6d9e2051e062248ef44f411ef34be0517f82f65f780096a941f0eebda6fc5be9",
+      "size": 64854
     },
     {
       "name": "_records.json",
-      "sha256": "13e97cdcff46069a562e181d3d1c9cc9fbb12c10b15081488fc8d7799c1384c4",
-      "size": 28929
+      "sha256": "22343e1a56cd72b9036ca7d52a85a4f356262cb08628bac3d700ab0f8773976e",
+      "size": 18656
     },
     {
       "name": "LICENSE_SCAN_REPORT.md",
-      "sha256": "2d04ef26fd55dd16cec6197aad0ed263dbcdd2d73944f13a46a465f8db736724",
-      "size": 5570
+      "sha256": "e5ead61402323e40ac60af6257bba88f054efe3bcb62dc068429f8f4b5ceeacc",
+      "size": 2689
     }
   ]
 }

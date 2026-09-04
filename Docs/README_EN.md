@@ -2,6 +2,18 @@
 
 [Русский](README_RU.md) · [User Guide](USER_GUIDE_EN.md)
 
+**Contents**
+
+- [Why It Exists](#why-it-exists)
+- [What Has to Be Installed Separately](#what-has-to-be-installed-separately)
+- [Editions](#editions)
+- [The Principle](#the-principle)
+- [What It Can Do](#what-it-can-do)
+- [Next](#next)
+- [Technical Reference](#technical-reference)
+  - [FFmpeg and the NVIDIA Driver](#ffmpeg-and-the-nvidia-driver)
+  - [Portability](#portability)
+
 Transcribing recordings, live dictation, cleaning up text, and exporting working
 notes. The extended edition — for a workstation with an NVIDIA card.
 

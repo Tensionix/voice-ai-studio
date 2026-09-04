@@ -1,5 +1,33 @@
 # Audion Voice AI - User Guide
 
+**Contents**
+
+- [1. Choose an Edition](#1-choose-an-edition)
+- [2. Installation](#2-installation)
+- [3. API Keys](#3-api-keys)
+- [4. Main Window](#4-main-window)
+- [5. App Language and Transcription Language](#5-app-language-and-transcription-language)
+- [6. File Transcription](#6-file-transcription)
+- [7. Supported Formats](#7-supported-formats)
+- [8. API Workflow](#8-api-workflow)
+- [9. Local Models Workflow](#9-local-models-workflow)
+- [10. CUDA Workflow in Studio](#10-cuda-workflow-in-studio)
+- [11. Live Dictation](#11-live-dictation)
+- [12. Overlay](#12-overlay)
+- [13. Live Text Cleanup](#13-live-text-cleanup)
+- [14. Export](#14-export)
+- [15. Tray](#15-tray)
+- [16. Settings Persistence](#16-settings-persistence)
+- [17. Reset App](#17-reset-app)
+- [18. Cleanup](#18-cleanup)
+- [19. Recommendations](#19-recommendations)
+- [20. Troubleshooting](#20-troubleshooting)
+- [Studio Batch Checklist](#studio-batch-checklist)
+- [API And Local Processing](#api-and-local-processing)
+- [Batch Monitoring](#batch-monitoring)
+- [Recovery](#recovery)
+- [Interface And Configuration Reference](#interface-and-configuration-reference)
+
 This guide describes the current workflow for Audion Voice AI Live and Audion Voice AI Studio.
 
 ## 1. Choose an Edition

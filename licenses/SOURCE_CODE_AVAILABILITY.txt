@@ -21,30 +21,6 @@ version: 8.0.1-full_build-www.gyan.dev
 url: https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/894da5ca7d
 path: Tools\ffmpeg-8.0.1-source.tar.gz
 
-Component: PySide6
-Version/profile: 6.11.2
-Method: upstream_pin
-version: 6.11.2
-url: https://pypi.org/project/pyside6/6.11.2/
-
-Component: PySide6_Addons
-Version/profile: 6.11.2
-Method: upstream_pin
-version: 6.11.2
-url: https://pypi.org/project/pyside6-addons/6.11.2/
-
-Component: PySide6_Essentials
-Version/profile: 6.11.2
-Method: upstream_pin
-version: 6.11.2
-url: https://pypi.org/project/pyside6-essentials/6.11.2/
-
-Component: shiboken6
-Version/profile: 6.11.2
-Method: upstream_pin
-version: 6.11.2
-url: https://pypi.org/project/shiboken6/6.11.2/
-
 Component: tqdm
 Version/profile: 4.70.0
 Method: upstream_pin
