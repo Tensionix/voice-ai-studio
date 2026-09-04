@@ -459,7 +459,7 @@ CONSOLIDATED LEGAL DOCUMENTS
 [L-007bc30a58fa] LICENSE.txt
 SHA256: 007bc30a58fa40a996e772047120de4eaf31f5110e4f9c3b5f93fcdfbe2eaca1
 Components: sympy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\sympy-1.14.0\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\sympy-1.14.0\LICENSE.txt
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -488,7 +488,7 @@ SOFTWARE.
 [L-0bef4ffb1855] LICENSE.txt
 SHA256: 0bef4ffb1855b65570304f2018c6d44e4bab97bd5df8716ecd7800014d717267
 Components: coloredlogs
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\coloredlogs-15.0.1\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\coloredlogs-15.0.1\LICENSE.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2020 Peter Odding
 
@@ -516,7 +516,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-0e07b95f3a8d] ThirdPartyNotices.txt
 SHA256: 0e07b95f3a8d6230037707c5c4a2b554d12c4cb67369669ac255635528ffcee2
 Components: onnxruntime-directml
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\onnxruntime-directml-1.24.4\ThirdPartyNotices.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\onnxruntime-directml-1.24.4\ThirdPartyNotices.txt
 --------------------------------------------------------------------------------
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 
@@ -6645,7 +6645,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 [L-130e3a64d5fd] LICENSE_1txt
 SHA256: 130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_1txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_1txt
 --------------------------------------------------------------------------------
 MIT License
 
@@ -6674,7 +6674,7 @@ SOFTWARE.
 [L-154759c1e9eb] LICENSE
 SHA256: 154759c1e9eb58e42643ee43ec59d556def4d1d702d911a484c469e02f85dd5d
 Components: openai
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\openai-3.8.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\openai-3.8.0\LICENSE
 --------------------------------------------------------------------------------
 Copyright © 2025, Karen Petrosyan.
 All rights reserved.
@@ -6709,7 +6709,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-1900269b4c2f] LICENSE.md
 SHA256: 1900269b4c2f0ff0c7ad01ecf13f5ded5610968a0cf1fb6bc3a83bccc2b4c38d
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.3.5\LICENSE.md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.3.5\LICENSE.md
 --------------------------------------------------------------------------------
 **This software is dual-licensed under the The University of Illinois/NCSA
 Open Source License (NCSA) and The 3-Clause BSD License**
@@ -6788,7 +6788,7 @@ the component code.
 [L-1a9a4f0e3d47] LICENSE_1md
 SHA256: 1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04
 Components: idna, pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\idna-3.19\LICENSE_1md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\idna-3.19\LICENSE_1md
 --------------------------------------------------------------------------------
 BSD 3-Clause License
 
@@ -6827,7 +6827,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-1b22b049b526] LICENSE_11.txt
 SHA256: 1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_11.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_11.txt
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -6856,7 +6856,7 @@ THE SOFTWARE.
 [L-1d2438cadca3] LICENSE_1.txt
 SHA256: 1d2438cadca31cb11257f8440703766e42c995202aa27e7f629f9a79a8b5c07f
 Components: cffi
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\cffi-2.1.1\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\cffi-2.1.1\LICENSE_1.txt
 --------------------------------------------------------------------------------
 Except when otherwise stated (look for LICENSE files in directories or
 information at the beginning of each file) all software and
@@ -6885,7 +6885,7 @@ documentation is licensed as follows:
 [L-211e7d737d61] LICENSE_8md
 SHA256: 211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_8md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_8md
 --------------------------------------------------------------------------------
 BSD 3-Clause License
 
@@ -6921,7 +6921,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-29e0fd62e929] LICENSE_9.txt
 SHA256: 29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_9.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_9.txt
 --------------------------------------------------------------------------------
 MIT License
 
@@ -6950,7 +6950,7 @@ SOFTWARE.
 [L-2afdd30d54b4] LICENSE
 SHA256: 2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a
 Components: pydantic_core
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pydantic-core-2.46.5\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pydantic-core-2.46.5\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -6979,7 +6979,7 @@ SOFTWARE.
 [L-2dc35496ce53] LICENSE
 SHA256: 2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94
 Components: fsspec
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\fsspec-2026.7.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\fsspec-2026.7.0\LICENSE
 --------------------------------------------------------------------------------
 BSD 3-Clause License
 
@@ -7016,7 +7016,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-2f07c72751ae] LICENSE
 SHA256: 2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c
 Components: onnxruntime, onnxruntime-directml, onnxruntime-gpu
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\onnxruntime-1.29.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\onnxruntime-1.29.0\LICENSE
 --------------------------------------------------------------------------------
 MIT License
 
@@ -7045,7 +7045,7 @@ SOFTWARE.
 [L-30ba4dc69a9f] LICENSE
 SHA256: 30ba4dc69a9f4dce132dd703937c7a93b573e2524604d2d5f92c5066514c0d4f
 Components: python-slugify
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\python-slugify-8.0.4\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\python-slugify-8.0.4\LICENSE
 --------------------------------------------------------------------------------
 The MIT License
 
@@ -7074,7 +7074,7 @@ THE SOFTWARE.
 [L-32cc15d484d7] NOTICE-FFmpeg-Build-Review.md
 SHA256: 32cc15d484d7e472e70962d1c991829fd266d287f1023b0f0f9c941fc5e1cfae
 Components: FFmpeg
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\ffmpeg-present-in-release\NOTICE-FFmpeg-Build-Review.md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\ffmpeg-present-in-release\NOTICE-FFmpeg-Build-Review.md
 --------------------------------------------------------------------------------
 # FFmpeg Build Review
 
@@ -7098,7 +7098,7 @@ References:
 [L-33be7b7e8fa4] LICENSE_8.txt
 SHA256: 33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca
 Components: pip, truststore
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_8.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_8.txt
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -7127,7 +7127,7 @@ THE SOFTWARE.
 [L-3409fa91f7ac] LICENSE
 SHA256: 3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4
 Components: iniconfig
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\iniconfig-2.3.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\iniconfig-2.3.0\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -7156,7 +7156,7 @@ SOFTWARE.
 [L-37db5bb85926] LICENSE_1txt
 SHA256: 37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361
 Components: h11
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\h11-0.16.0\LICENSE_1txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\h11-0.16.0\LICENSE_1txt
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -7186,7 +7186,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-3938e7535c3e] LICENSE.txt
 SHA256: 3938e7535c3e4ef7e6363de9b693fe3bafe3c4a5e5f4925cd48375096fe7afd5
 Components: text-unidecode
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\text-unidecode-1.3\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\text-unidecode-1.3\LICENSE.txt
 --------------------------------------------------------------------------------
 text-unidecode is a free software; you can redistribute
 it and/or modify it under the terms of either:
@@ -7328,7 +7328,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 [L-3b2f81fe21d1] LICENSE_1.txt
 SHA256: 3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf
 Components: typing_extensions
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\typing-extensions-4.16.0\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\typing-extensions-4.16.0\LICENSE_1.txt
 --------------------------------------------------------------------------------
 A. HISTORY OF THE SOFTWARE
 ==========================
@@ -7615,7 +7615,7 @@ PERFORMANCE OF THIS SOFTWARE.
 [L-3d6a0c050d8b] LICENSE_1.txt
 SHA256: 3d6a0c050d8bec52fabad502e45fb25bd02bcadbd70dea34d447b6a0ff4e6da8
 Components: websockets
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\websockets-16.1\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\websockets-16.1\LICENSE_1.txt
 --------------------------------------------------------------------------------
 Copyright (c) Aymeric Augustin and contributors
 
@@ -7647,7 +7647,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-3e6dae555eb9] LICENSE.MIT
 SHA256: 3e6dae555eb92787fc82d1d48355677f454c7f65aeb38d3f9e72bf9a3daf034b
 Components: sniffio
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\sniffio-1.3.1\LICENSE.MIT
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\sniffio-1.3.1\LICENSE.MIT
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -7675,7 +7675,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-3f2c1ffa7638] COPYING
 SHA256: 3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\COPYING
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\COPYING
 --------------------------------------------------------------------------------
 BSD Zero Clause License
 
@@ -7697,7 +7697,7 @@ PERFORMANCE OF THIS SOFTWARE.
 [L-4a765ceefcdd] LICENSE
 SHA256: 4a765ceefcddd40d6518f2f22f0fe2c6d532890be821d8bb1f2c21ebafed8817
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.3.5\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.3.5\LICENSE
 --------------------------------------------------------------------------------
 * Copyright (c) 2006, University of Georgia and Pierre G.F. Gerard-Marchant
 * All rights reserved.
@@ -7729,7 +7729,7 @@ Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_au
 [L-4ac48f411780] LICENSE.txt
 SHA256: 4ac48f4117809f2734066150450f120b3bb110ac1d3b32170795e0560dbbc1f5
 Components: humanfriendly
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\humanfriendly-10.0\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\humanfriendly-10.0\LICENSE.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2021 Peter Odding
 
@@ -7757,7 +7757,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-4eb1fb1705e2] AUTHORS.txt
 SHA256: 4eb1fb1705e2def898e81bcba19c3aac80620d27ba3569d6a6df7b4629d1b5c2
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\AUTHORS.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\AUTHORS.txt
 --------------------------------------------------------------------------------
 @Switch01
 A_Rog
@@ -8653,7 +8653,7 @@ Zvezdan Petkovic
 [L-4ec59d544f12] LICENSE_1md
 SHA256: 4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d
 Components: httpx
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\httpx-0.28.1\LICENSE_1md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\httpx-0.28.1\LICENSE_1md
 --------------------------------------------------------------------------------
 Copyright © 2019, [Encode OSS Ltd](https://www.encode.io/).
 All rights reserved.
@@ -8673,7 +8673,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 [L-50e6751797c5] LICENSE-Apache-2.0.txt
 SHA256: 50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a
 Components: flatbuffers, hf-xet, huggingface_hub, sniffio
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\flatbuffers-present-in-release\LICENSE-Apache-2.0.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\flatbuffers-present-in-release\LICENSE-Apache-2.0.txt
 --------------------------------------------------------------------------------
 Apache License
                            Version 2.0, January 2004
@@ -8882,7 +8882,7 @@ Apache License
 [L-5361ac9dc58f] LICENSE_1.txt
 SHA256: 5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0
 Components: anyio
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\anyio-4.15.0\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\anyio-4.15.0\LICENSE_1.txt
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -8910,7 +8910,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-5f6ed77cd032] LICENSE_2md
 SHA256: 5f6ed77cd0326d7a2598962550123657845db4e8095ee29904f70e2717c0816e
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_2md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_2md
 --------------------------------------------------------------------------------
 ## NumPy
 
@@ -8979,7 +8979,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-605e9047a563] LICENSE-GPL-3.0.txt
 SHA256: 605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad
 Components: FFmpeg
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\ffmpeg-present-in-release\LICENSE-GPL-3.0.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\ffmpeg-present-in-release\LICENSE-GPL-3.0.txt
 --------------------------------------------------------------------------------
 GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
@@ -9661,7 +9661,7 @@ Public License instead of this License.  But first, please read
 [L-608c89d5060a] LICENSE
 SHA256: 608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48
 Components: filelock
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\filelock-3.32.5\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\filelock-3.32.5\LICENSE
 --------------------------------------------------------------------------------
 MIT License
 
@@ -9690,7 +9690,7 @@ SOFTWARE.
 [L-634300a669d4] LICENSE_3txt
 SHA256: 634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_3txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_3txt
 --------------------------------------------------------------------------------
 Copyright (c) 2008-present The pip developers (see AUTHORS.txt file)
 
@@ -9718,7 +9718,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-652c878488d1] LICENSE
 SHA256: 652c878488d1456361e08c3f8607fd7ba59892a14103d15cce4ff93c85b5cc8b
 Components: sniffio
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\sniffio-1.3.1\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\sniffio-1.3.1\LICENSE
 --------------------------------------------------------------------------------
 This software is made available under the terms of *either* of the
 licenses found in LICENSE.APACHE2 or LICENSE.MIT. Contributions to are
@@ -9729,7 +9729,7 @@ made under the terms of *both* these licenses.
 [L-6e5e117324af] LICENSE
 SHA256: 6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d
 Components: protobuf
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\protobuf-7.36.1\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\protobuf-7.36.1\LICENSE
 --------------------------------------------------------------------------------
 Copyright 2008 Google Inc.  All rights reserved.
 
@@ -9769,7 +9769,7 @@ support library is itself covered by the above license.
 [L-6f5828a57223] LICENSE_5md
 SHA256: 6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_5md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_5md
 --------------------------------------------------------------------------------
 # PHILOX
 
@@ -9808,7 +9808,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-7c7134b9f7b9] LICENSE
 SHA256: 7c7134b9f7b978c03fca875517cf398db91f19bbb8109b6685e742aa3f57468e
 Components: jiter
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\jiter-0.16.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\jiter-0.16.0\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -9837,7 +9837,7 @@ SOFTWARE.
 [L-7df20dcdf919] LICENSE-Microsoft-MIT.txt
 SHA256: 7df20dcdf9197e9945c14858d41c60f11b52b93e5b69e2b63416b874d598d322
 Components: onnxruntime
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\onnxruntime-present-in-release\LICENSE-Microsoft-MIT.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\onnxruntime-present-in-release\LICENSE-Microsoft-MIT.txt
 --------------------------------------------------------------------------------
 MIT License
 
@@ -9866,7 +9866,7 @@ SOFTWARE.
 [L-7e7d6dbaf7fe] LICENSE.md
 SHA256: 7e7d6dbaf7fe160d39fd6e84fd02c33cab96bcbea34d36998d545bceb4a19c30
 Components: httpx2
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\httpx2-2.12.0\LICENSE.md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\httpx2-2.12.0\LICENSE.md
 --------------------------------------------------------------------------------
 Copyright © 2026 to present Pydantic Services Inc. and individual contributors.
 Copyright © 2019, [Encode OSS Ltd](https://www.encode.io/).
@@ -9887,7 +9887,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 [L-804b59b25f2c] LICENSE
 SHA256: 804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3
 Components: typing-inspection
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\typing-inspection-0.4.4\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\typing-inspection-0.4.4\LICENSE
 --------------------------------------------------------------------------------
 MIT License
 
@@ -9916,7 +9916,7 @@ SOFTWARE.
 [L-808e10c8a6ab] LICENSE.txt
 SHA256: 808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE.txt
 --------------------------------------------------------------------------------
 A. HISTORY OF THE SOFTWARE
 ==========================
@@ -10208,7 +10208,7 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 [L-81932e77fef4] LICENSE_5.txt
 SHA256: 81932e77fef4cec306da54caf7d4d221dfd0f6fb6da214c712e36cb95ac47906
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_5.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_5.txt
 --------------------------------------------------------------------------------
 Apache License
                            Version 2.0, January 2004
@@ -10390,7 +10390,7 @@ Apache License
 [L-82606ac1b37d] LICENSE_7md
 SHA256: 82606ac1b37d264a2260639f8a1646f2a66b713941447e01362e1fef587b73a8
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_7md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_7md
 --------------------------------------------------------------------------------
 # SPLITMIX64
 
@@ -10407,7 +10407,7 @@ See <http://creativecommons.org/publicdomain/zero/1.0/>.
 [L-82b1038521b0] AUTHORS
 SHA256: 82b1038521b0696c63c90b31ed4a0a2c9c4c16871c648b157b07ca44b6f18f8d
 Components: sympy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\sympy-1.14.0\AUTHORS
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\sympy-1.14.0\AUTHORS
 --------------------------------------------------------------------------------
 All people who contributed to SymPy by sending at least a patch or
 more (in the order of the date of their first contribution), except
@@ -11794,7 +11794,7 @@ KJaybhaye <krushnajaybhaye01@gmail.com>
 [L-86da0f01aeae] LICENSE_10.txt
 SHA256: 86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_10.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_10.txt
 --------------------------------------------------------------------------------
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
@@ -11819,7 +11819,7 @@ IN THE SOFTWARE.
 [L-86eeee87be2a] LICENSE_2txt
 SHA256: 86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_2txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_2txt
 --------------------------------------------------------------------------------
 Copyright 2012-2021  Eric Larson
 
@@ -11840,7 +11840,7 @@ limitations under the License.
 [L-8d3928f9dc44] LICENSE_1.txt
 SHA256: 8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4
 Components: PyYAML
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pyyaml-6.0.3\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pyyaml-6.0.3\LICENSE_1.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2017-2021 Ingy döt Net
 Copyright (c) 2006-2016 Kirill Simonov
@@ -11868,7 +11868,7 @@ SOFTWARE.
 [L-9313d2b45623] LICENSE
 SHA256: 9313d2b456239c74d90ae38dc665168ccdd01ca74bef93a79e7ee2e5c579b3b6
 Components: onnx-asr
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\onnx-asr-0.12.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\onnx-asr-0.12.0\LICENSE
 --------------------------------------------------------------------------------
 MIT License
 
@@ -11897,7 +11897,7 @@ SOFTWARE.
 [L-9a8ad106a394] LICENSE.txt
 SHA256: 9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d
 Components: click
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\click-8.5.0\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\click-8.5.0\LICENSE.txt
 --------------------------------------------------------------------------------
 Copyright 2014 Pallets
 
@@ -11933,7 +11933,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-9b1f50aae626] LicenseRef-Qt-Commercial.txt
 SHA256: 9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700
 Components: PySide6, PySide6_Addons, PySide6_Essentials, shiboken6
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pyside6-6.11.2\LicenseRef-Qt-Commercial.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pyside6-6.11.2\LicenseRef-Qt-Commercial.txt
 --------------------------------------------------------------------------------
 Licensees holding valid commercial Qt licenses may use this software in
 accordance with the the terms contained in a written agreement between
@@ -11949,7 +11949,7 @@ For further information use the contact form at https://www.qt.io/contact-us.
 [L-9d4098846018] LICENSE_6md
 SHA256: 9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_6md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_6md
 --------------------------------------------------------------------------------
 # SFC64
 
@@ -11984,7 +11984,7 @@ DEALINGS IN THE SOFTWARE.
 [L-9e9824923444] COPYING
 SHA256: 9e98249234446e96ab6cd2ac59cbb2f7bfcb15a8e21a00548e1e14da939b6927
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\COPYING
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\COPYING
 --------------------------------------------------------------------------------
 Copyright (C) 2008-2011 INADA Naoki <songofacandy@gmail.com>
 
@@ -12005,7 +12005,7 @@ Copyright (C) 2008-2011 INADA Naoki <songofacandy@gmail.com>
 [L-a14cc25e10d4] LICENSE_2txt
 SHA256: a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_2txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_2txt
 --------------------------------------------------------------------------------
 Copyright (c) 1992-2013 The University of Tennessee and The University
                         of Tennessee Research Foundation.  All rights
@@ -12061,7 +12061,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-a296f423c0d3] LICENSE-fzf.txt
 SHA256: a296f423c0d30ce3581435e78e7e36c5fe73984a882d8720c72e713b4593588b
 Components: fzf
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\fzf-bundled\LICENSE-fzf.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\fzf-bundled\LICENSE-fzf.txt
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -12090,7 +12090,7 @@ THE SOFTWARE.
 [L-a7a1034ce101] LICENSE_1txt
 SHA256: a7a1034ce1018ae36675f3e4c85f07854e4cc9ac87c1d0252e75002d52ec95e4
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_1txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_1txt
 --------------------------------------------------------------------------------
 Copyright (c) 2005-2025, NumPy Developers.
 All rights reserved.
@@ -13011,7 +13011,7 @@ Public License instead of this License.  But first, please read
 [L-a85ca13fdf90] LICENSE_1md
 SHA256: a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_1md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_1md
 --------------------------------------------------------------------------------
 Copyright (C) 2010-2018 Max-Planck-Society
 All rights reserved.
@@ -13044,7 +13044,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-a8ad31b1c3f4] LICENSE_2.txt
 SHA256: a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_2.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_2.txt
 --------------------------------------------------------------------------------
 Apache License
                            Version 2.0, January 2004
@@ -13253,7 +13253,7 @@ Apache License
 [L-a9d66f1d526d] LICENSE_4.txt
 SHA256: a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17
 Components: pip, Pygments
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_4.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_4.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2006-2022 by the respective authors (see AUTHORS file).
 All rights reserved.
@@ -13286,7 +13286,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-a9e186f3ca16] LICENSE
 SHA256: a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3
 Components: pydantic
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pydantic-2.13.5\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pydantic-2.13.5\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -13315,7 +13315,7 @@ SOFTWARE.
 [L-ace82ab500d2] LICENSE_1txt
 SHA256: ace82ab500d229f26ee3ce7646f0184fd4ba9a3774c1169ca97fa00b726e24b7
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.3.5\LICENSE_1txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.3.5\LICENSE_1txt
 --------------------------------------------------------------------------------
 Copyright (c) 2005-2025, NumPy Developers.
 All rights reserved.
@@ -14272,7 +14272,7 @@ Public License instead of this License.  But first, please read
 [L-ad6f5853fba0] License.txt
 SHA256: ad6f5853fba0ca0d159d0f58d49ae49830c2f8c93f7a92648b9ce90adb4c6ccd
 Components: nvidia-cublas-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-runtime-cu12, nvidia-cufft-cu12, nvidia-curand-cu12, nvidia-nvjitlink-cu12
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\nvidia-cublas-cu12-12.9.2.10\License.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\nvidia-cublas-cu12-12.9.2.10\License.txt
 --------------------------------------------------------------------------------
 End User License Agreement
 --------------------------
@@ -15848,7 +15848,7 @@ conditions:
 [L-ae2b7a72b3b5] License.txt
 SHA256: ae2b7a72b3b54d9cfe7b234bfab5a42894631093133247fad7edb21261d7f7c4
 Components: nvidia-cudnn-cu12
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\nvidia-cudnn-cu12-9.24.0.43\License.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\nvidia-cudnn-cu12-9.24.0.43\License.txt
 --------------------------------------------------------------------------------
 LICENSE AGREEMENT FOR NVIDIA SOFTWARE DEVELOPMENT KITS
 
@@ -16009,7 +16009,7 @@ In addition to the rights above, for parties that are developing software intend
 [L-b345a9762fdc] LICENSE_1.txt
 SHA256: b345a9762fdc5175d3d486d344cdcbb79078aee7c00e47fcc756ef2c4f5dcb61
 Components: pycparser
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pycparser-3.0\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pycparser-3.0\LICENSE_1.txt
 --------------------------------------------------------------------------------
 pycparser -- A C parser in Python
 
@@ -16044,7 +16044,7 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-b6eea21bbafb] LICENSE_1.txt
 SHA256: b6eea21bbafbaf7a2177e492f1be6b5efc6f4e708b1980773de51cdaa52f8211
 Components: sounddevice
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\sounddevice-0.5.5\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\sounddevice-0.5.5\LICENSE_1.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2015-2025 Matthias Geier
 
@@ -16071,7 +16071,7 @@ THE SOFTWARE.
 [L-b70e7e9b742f] LICENSE_4BSD
 SHA256: b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5
 Components: packaging, pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\packaging-26.3\LICENSE_4BSD
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\packaging-26.3\LICENSE_4BSD
 --------------------------------------------------------------------------------
 Copyright (c) Donald Stufft and individual contributors.
 All rights reserved.
@@ -16102,7 +16102,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-b80816b0d530] LICENSE_1.txt
 SHA256: b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_1.txt
 --------------------------------------------------------------------------------
 MIT License
 
@@ -16131,7 +16131,7 @@ SOFTWARE.
 [L-b8b132a8cafd] LICENSE.md
 SHA256: b8b132a8cafda6dd54d348bf4568e14b76cbc896d4dd2841f9d32c1709ddba7d
 Components: pyreadline3
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pyreadline3-3.5.6\LICENSE.md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pyreadline3-3.5.6\LICENSE.md
 --------------------------------------------------------------------------------
 # LICENSE
 
@@ -16192,7 +16192,7 @@ DAMAGE.
 [L-b8b1fae5894c] LICENSE_1.txt
 SHA256: b8b1fae5894cfbe213b47f1378bb2269cf82de18b34447e871c0225ace0d3ad7
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_1.txt
 --------------------------------------------------------------------------------
 This project is primarily dual-licensed under your choice of either the Apache
 License 2.0 or the BSD 3-Clause License.
@@ -16571,7 +16571,7 @@ express Statement of Purpose.
 [L-bb28c48e3e07] LICENSE_4APACHE
 SHA256: bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec
 Components: packaging, pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\packaging-26.3\LICENSE_4APACHE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\packaging-26.3\LICENSE_4APACHE
 --------------------------------------------------------------------------------
 Apache License
                            Version 2.0, January 2004
@@ -16755,7 +16755,7 @@ Apache License
 [L-c17011467b4f] LICENSE_2.txt
 SHA256: c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_2.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_2.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2005-2021, NumPy Developers.
 All rights reserved.
@@ -16793,7 +16793,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-c26cae81da45] LICENSE
 SHA256: c26cae81da4508e5e249985777a33821f183223ebb74d7f8cfbf90fe7eef2fb7
 Components: mpmath
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\mpmath-1.3.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\mpmath-1.3.0\LICENSE
 --------------------------------------------------------------------------------
 Copyright (c) 2005-2021 Fredrik Johansson and mpmath contributors
 
@@ -16828,7 +16828,7 @@ DAMAGE.
 [L-c4df125c807b] LICENSE.md
 SHA256: c4df125c807b0613501e943a5c92496dd11d2c16604ce396097a8dde396304d9
 Components: httpcore2
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\httpcore2-2.12.0\LICENSE.md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\httpcore2-2.12.0\LICENSE.md
 --------------------------------------------------------------------------------
 Copyright © 2026 to present Pydantic Services Inc. and individual contributors.
 Copyright © 2020, [Encode OSS Ltd](https://www.encode.io/).
@@ -16864,7 +16864,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-ca836a5f9ecc] LICENSE
 SHA256: ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b
 Components: pytest
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pytest-9.1.1\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pytest-9.1.1\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -16893,7 +16893,7 @@ SOFTWARE.
 [L-cac35c02686e] LICENSE_1txt
 SHA256: cac35c02686e5d04a5a7140bfb3b36e73aed496656e891102e428886d7930318
 Components: colorama
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\colorama-0.4.6\LICENSE_1txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\colorama-0.4.6\LICENSE_1txt
 --------------------------------------------------------------------------------
 Copyright (c) 2010 Jonathan Hartley
 All rights reserved.
@@ -16928,7 +16928,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-cad1ef5bd340] LICENSE_4.txt
 SHA256: cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48
 Components: packaging, pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\packaging-26.3\LICENSE_4.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\packaging-26.3\LICENSE_4.txt
 --------------------------------------------------------------------------------
 This software is made available under the terms of *either* of the licenses
 found in LICENSE.APACHE or LICENSE.BSD. Contributions to this software is made
@@ -16939,7 +16939,7 @@ under the terms of *both* these licenses.
 [L-d6b65e6c213a] LICENSE
 SHA256: d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606
 Components: pluggy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pluggy-1.6.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pluggy-1.6.0\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 
@@ -16968,7 +16968,7 @@ SOFTWARE.
 [L-d7e9361b9533] LICENSE_4md
 SHA256: d7e9361b9533f48dd1e60ff7e4ab4dd1b53230ca2d4bf8d79bf3efa5f53336be
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_4md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_4md
 --------------------------------------------------------------------------------
 # PCG64
 
@@ -16998,7 +16998,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-deed7c17a431] LICENSE
 SHA256: deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE
 --------------------------------------------------------------------------------
 Copyright (c) 2020 Will McGugan
 
@@ -17025,7 +17025,7 @@ SOFTWARE.
 [L-e93716da6b9c] LICENSE_1.txt
 SHA256: e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7
 Components: certifi, pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\certifi-2026.7.22\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\certifi-2026.7.22\LICENSE_1.txt
 --------------------------------------------------------------------------------
 This package contains a modified version of ca-bundle.crt:
 
@@ -17053,7 +17053,7 @@ one at http://mozilla.org/MPL/2.0/.
 [L-e9e90971a8e7] ThirdPartyNotices.txt
 SHA256: e9e90971a8e75a9a8ac0c6412e29c1202d079998389915aa485f46c816c3b4cc
 Components: onnxruntime-gpu
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\onnxruntime-gpu-1.22.0\ThirdPartyNotices.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\onnxruntime-gpu-1.22.0\ThirdPartyNotices.txt
 --------------------------------------------------------------------------------
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 
@@ -23217,7 +23217,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 [L-ea74b9158f45] AUTHORS
 SHA256: ea74b9158f4587191549080d5713701859bf6f7b61ce491020338128131847f3
 Components: Pygments
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pygments-2.21.0\AUTHORS
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pygments-2.21.0\AUTHORS
 --------------------------------------------------------------------------------
 Pygments is written and maintained by Georg Brandl <georg@python.org>.
 
@@ -23521,7 +23521,7 @@ Many thanks for all contributions!
 [L-ea9b7901b93a] LICENSE
 SHA256: ea9b7901b93a0e360da655d75454527c26cbc835b42ee739f7b1018f81afcb1a
 Components: sympy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\sympy-1.14.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\sympy-1.14.0\LICENSE
 --------------------------------------------------------------------------------
 Copyright (c) 2006-2023 SymPy Development Team
 
@@ -23682,7 +23682,7 @@ SOFTWARE.
 [L-ef21afaad4bb] LICENSE_3md
 SHA256: ef21afaad4bb20d2020491dc27ed55ba0d042f1b9487911a57f28b46b407a2b7
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\LICENSE_3md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\LICENSE_3md
 --------------------------------------------------------------------------------
 # MT19937
 
@@ -23751,7 +23751,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-f3086bf07259] ThirdPartyNotices.txt
 SHA256: f3086bf07259feda14d37b271a0fc6b5e76b410fbbc695900537f77e50d34ba7
 Components: onnxruntime
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\onnxruntime-1.29.0\ThirdPartyNotices.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\onnxruntime-1.29.0\ThirdPartyNotices.txt
 --------------------------------------------------------------------------------
 THIRD PARTY SOFTWARE NOTICES AND INFORMATION
 
@@ -30103,7 +30103,7 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 [L-f388fd38cad1] LICENSE_7.txt
 SHA256: f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d
 Components: pip
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\pip-26.2.1\LICENSE_7.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\pip-26.2.1\LICENSE_7.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2018, Tzu-ping Chung <uranusjr@gmail.com>
 
@@ -30124,7 +30124,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 [L-f419e9908876] LICENSE.txt
 SHA256: f419e990887622d00595611ea5da8497b906ab63ba868ed1f3d7b0384287e113
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.3.5\LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.3.5\LICENSE.txt
 --------------------------------------------------------------------------------
 zlib License
   ------------
@@ -30153,7 +30153,7 @@ zlib License
 [L-f6fa51e9cc3f] LICENSE-Python-Embedded.txt
 SHA256: f6fa51e9cc3f0a1ffad26fadc951585b6d0235677e5766ecc2de1aa4ef7ebac5
 Components: Python Embedded
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\python-embedded-3.12.x\LICENSE-Python-Embedded.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\python-embedded-3.12.x\LICENSE-Python-Embedded.txt
 --------------------------------------------------------------------------------
 A. HISTORY OF THE SOFTWARE
 ==========================
@@ -30862,7 +30862,7 @@ docs/license.html_lib.
 [L-f7b14309e5f5] dragon4_LICENSE.txt
 SHA256: f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c
 Components: numpy
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\numpy-2.5.2\dragon4_LICENSE.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\numpy-2.5.2\dragon4_LICENSE.txt
 --------------------------------------------------------------------------------
 Copyright (c) 2014 Ryan Juckett
 
@@ -30897,7 +30897,7 @@ permission to include it under the MIT license instead.
 [L-fb3496291624] LICENSE_1.txt
 SHA256: fb34962916248c2e011077fb64b82d585814631bd291f2b78e37eccea9a9fe78
 Components: openai
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\openai-3.8.0\LICENSE_1.txt
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\openai-3.8.0\LICENSE_1.txt
 --------------------------------------------------------------------------------
 Apache License
                            Version 2.0, January 2004
@@ -31106,7 +31106,7 @@ Apache License
 [L-fcff87c3a47c] LICENCE
 SHA256: fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de
 Components: tqdm
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\tqdm-4.70.0\LICENCE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\tqdm-4.70.0\LICENCE
 --------------------------------------------------------------------------------
 `tqdm` is a product of collaborative work.
 Unless otherwise stated, all authors (see commit logs) retain copyright
@@ -31163,7 +31163,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [L-fdcb59154c74] LICENSE_1md
 SHA256: fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5
 Components: httpcore
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\httpcore-1.0.9\LICENSE_1md
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\httpcore-1.0.9\LICENSE_1md
 --------------------------------------------------------------------------------
 Copyright © 2020, [Encode OSS Ltd](https://www.encode.io/).
 All rights reserved.
@@ -31198,7 +31198,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [L-fe1049884b1a] LICENSE
 SHA256: fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d
 Components: annotated-types
-Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T230148Z_audion-voice-ai-studio_101668e3\collector_legal_files\annotated-types-0.8.0\LICENSE
+Captured from: E:\TOOLS\Audion Build Licenses\workspace\runs\20260904T232936Z_audion-voice-ai-studio_950ea9c0\collector_legal_files\annotated-types-0.8.0\LICENSE
 --------------------------------------------------------------------------------
 The MIT License (MIT)
 

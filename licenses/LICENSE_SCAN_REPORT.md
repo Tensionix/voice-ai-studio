@@ -1,7 +1,7 @@
 # Audion Build Licenses Scan Report
 
 - Project: **Audion Voice AI Studio** (`audion-voice-ai-studio`)
-- Run: `20260904T230148Z_audion-voice-ai-studio_101668e3`
+- Run: `20260904T232936Z_audion-voice-ai-studio_950ea9c0`
 - Project root: `E:\Releases Super New\Audion Voice AI Studio`
 - Scan root: `E:\Releases Super New\Audion Voice AI Studio`
 - Output: `E:\Releases Super New\Audion Voice AI Studio\licenses`
