@@ -8,14 +8,14 @@
   <a href="https://github.com/Tensionix/voice-ai-studio/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/voice-ai-studio?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
 </p>
 
-**Version 2.2.0** · 2026-09-05 · 4.6 MB
+**Version 2.2.0** · 2026-09-05 · 2,461.3 MB
 
-- [Direct download](https://dl.audion.dev/voice-ai-studio/2.2.0/Audion_Voice_AI_Studio_v2.2.0.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/voice-ai-studio/2.2.0/Audion_Voice_AI_Studio_v2.2.0_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/voice-ai-studio) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: 7244f303cda892a53670a475e7c346568fe134d6fa4d29e4a1d354bea00f457e`
+`SHA-256: fea6605e4eefc42e00ea8dec8da6a9c834c266a69b3a5f663128815060e2adb5`
 
 ---
 
@@ -34,6 +34,8 @@ An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 - [What It Can Do](#what-it-can-do)
 - [Next](#next)
 - [Technical Reference](#technical-reference)
+  - [FFmpeg and the NVIDIA Driver](#ffmpeg-and-the-nvidia-driver)
+  - [Portability](#portability)
 
 Transcribing recordings, live dictation, cleaning up text, and exporting working
 notes. The extended edition — for a workstation with an NVIDIA card.
@@ -66,6 +68,16 @@ the user downloads them.
 
 Until the models are installed, transcription will not start: the window opens,
 but there is nothing to recognise with.
+
+**On the first start the app offers to download what is missing.** The
+"Download models and engines" window lists the modules with their download
+size: GigaAM, whisper.cpp CUDA with the Turbo model, the Large V2 model and,
+on an NVIDIA machine, the speaker-separation layer; about 10.6 GB together.
+"Download and install" installs them one after another; progress is shown on
+the Maintenance page, and once everything is in place every mode there is
+green. "Later" postpones the question until the next start, "Don't ask again"
+hides the window for good. Modules can still be installed by hand on the same
+page.
 
 ## Editions
 

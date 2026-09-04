@@ -2,7 +2,7 @@
 /runtime/
 /Tools/
 /models/
-/install/download/      # embeddable python zip, get-pip, in-project pip cache + build temp
+/install/download/
 /system_core/fzf.exe
 /system_core/_fzf_tmp/
 /._runtime/
@@ -27,9 +27,18 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
-.devlibs/          # dev-only deps (e.g. PySide6) for headless GUI testing
+.devlibs/
 
 # Sidecars accidentally dropped into input
 /input/**/*.transcript.json
 /input/**/*.srt
 /input/**/*.vtt
+
+# Secrets (any provider key file) and personal data
+/config/api_key_*.txt
+/config/dictation_history.json
+
+# Release artefacts and caches rebuilt by the build tools
+/wheelhouse/
+/release_manifest.json
+/input/

@@ -39,7 +39,9 @@ def _ffmpeg_installed(paths: ProjectPaths) -> bool:
 
 
 def _wheel_cache_installed(paths: ProjectPaths) -> bool:
-    wheel_root = paths.root / "install" / "wheels"
+    # The installers (Install-GigaAM-ONNX.ps1, Install-Live-Deps.cmd) and
+    # Rebuild-Wheel-Cache.ps1 all read/write the root-level `wheelhouse`.
+    wheel_root = paths.root / "wheelhouse"
     required = ["common", "directml", "cpu"]
     if current_edition(paths) == EDITION_STUDIO:
         required.append("cuda")
@@ -125,6 +127,9 @@ class ModuleInfo:
     editions: tuple[str, ...] = (EDITION_LIVE, EDITION_STUDIO)
     install_key: str = "mod_install"
     reinstall_key: str = "mod_reinstall"
+    # Approximate network download in megabytes (models, packs, wheels not
+    # shipped in the distribution). Shown in the first-run setup prompt.
+    download_mb: int = 0
 
     def script_path(self, paths: ProjectPaths) -> Path:
         return paths.root / "install" / self.script
@@ -136,24 +141,78 @@ class ModuleInfo:
             return False
 
 
+RECOMMENDED = "recommended"
+OPTIONAL = "optional"
+NOT_NEEDED = "not_needed"
+
+# Modules every installation of the edition should have. Restore rows and the
+# Studio GPU stack depend on the detected hardware (see module_recommendation).
+_ALWAYS_RECOMMENDED = {"ffmpeg", "live", "wheel_cache", "gigaam", "vulkan", "whispercpp_models"}
+
+
+def module_recommendation(mod: ModuleInfo, paths: ProjectPaths, profile=None) -> str:
+    """Classify a module for this computer: RECOMMENDED / OPTIONAL / NOT_NEEDED.
+
+    `profile` is a `LocalHardwareProfile` (or None while detection runs / after
+    it failed, which yields the safe non-GPU recommendations)."""
+    edition = current_edition(paths)
+    has_nvidia = bool(getattr(profile, "has_nvidia", False))
+    has_windows_gpu = bool(
+        has_nvidia
+        or getattr(profile, "has_amd", False)
+        or getattr(profile, "has_intel", False)
+    )
+    if mod.key in _ALWAYS_RECOMMENDED:
+        return RECOMMENDED
+    if mod.key == "gpu":
+        return RECOMMENDED if edition == EDITION_STUDIO and has_nvidia else NOT_NEEDED
+    if mod.key == "restore_rtx":
+        if mod.is_installed(paths):
+            return NOT_NEEDED
+        return OPTIONAL if edition == EDITION_STUDIO and has_nvidia else NOT_NEEDED
+    if mod.key == "restore_intel":
+        if mod.is_installed(paths):
+            return NOT_NEEDED
+        return OPTIONAL if has_windows_gpu and not has_nvidia else NOT_NEEDED
+    return OPTIONAL
+
+
+def missing_recommended_modules(paths: ProjectPaths, profile=None) -> list[ModuleInfo]:
+    """Recommended modules that are not installed yet, in install order.
+
+    This is the list the first-run setup prompt offers to download so the
+    readiness matrix on the Maintenance page turns fully green."""
+    return [
+        mod
+        for mod in list_modules(paths)
+        if module_recommendation(mod, paths, profile) == RECOMMENDED
+        and not mod.is_installed(paths)
+    ]
+
+
 # GUI runs from an already prepared portable Python app. Mirror the builder's
 # user-facing install flow from the first step that can be launched inside GUI.
 _MODULES: list[ModuleInfo] = [
     ModuleInfo("ffmpeg", "Install-Portable-FFmpeg-BtbN.cmd",
-               "mod_ffmpeg", "mod_ffmpeg_desc", _ffmpeg_installed),
+               "mod_ffmpeg", "mod_ffmpeg_desc", _ffmpeg_installed, download_mb=150),
     ModuleInfo("live", "Install-Live-Deps.cmd",
-               "mod_live", "mod_live_desc", _live_installed),
+               "mod_live", "mod_live_desc", _live_installed, download_mb=1),
+    # common + directml + cpu + cuda wheels (onnxruntime-gpu, cuDNN, cuBLAS...).
     ModuleInfo("wheel_cache", "Rebuild-Wheel-Cache.cmd",
-               "mod_wheel_cache", "mod_wheel_cache_desc", _wheel_cache_installed),
+               "mod_wheel_cache", "mod_wheel_cache_desc", _wheel_cache_installed, download_mb=1900),
+    # GigaAM v3 CTC + RNN-T ONNX payloads (~845 MB each) from Hugging Face.
     ModuleInfo("gigaam", "Install-GigaAM-ONNX.cmd",
-               "mod_gigaam", "mod_gigaam_desc", _gigaam_installed),
+               "mod_gigaam", "mod_gigaam_desc", _gigaam_installed, download_mb=1750),
+    # whisper.cpp CUDA/cuBLAS pack (640 MB) + ggml-large-v3-turbo.bin (1549 MB).
     ModuleInfo("vulkan", "Install-Live-Vulkan.cmd",
-               "mod_vulkan", "mod_vulkan_desc", _vulkan_installed),
+               "mod_vulkan", "mod_vulkan_desc", _vulkan_installed, download_mb=2190),
+    # ggml-large-v2.bin (2951 MB).
     ModuleInfo("whispercpp_models", "Install-WhisperCpp-Large-Models.cmd",
                "mod_whispercpp_models", "mod_whispercpp_models_desc",
-               _whispercpp_large_models_installed, (EDITION_STUDIO,)),
+               _whispercpp_large_models_installed, (EDITION_STUDIO,), download_mb=2960),
+    # torch cu128 (3273 MB) + torchaudio + pyannote.audio and dependencies.
     ModuleInfo("gpu", "Install-Diarization-GPU.cmd",
-               "mod_gpu", "mod_gpu_desc", _gpu_installed, (EDITION_STUDIO,)),
+               "mod_gpu", "mod_gpu_desc", _gpu_installed, (EDITION_STUDIO,), download_mb=3700),
     ModuleInfo("restore_intel", "Restore-GigaAM-DirectML.cmd",
                "mod_restore_intel", "mod_restore_intel_desc",
                _gigaam_directml_installed, install_key="mod_restore", reinstall_key="mod_restore"),

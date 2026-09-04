@@ -520,8 +520,8 @@ def test_queue_source_and_operation_rows_are_compact(window):
     assert window.lbl_add_sources.text() == window._tr.tr("add_sources")
     assert window.btn_add_files.property("variant") == "source-picker"
     assert window.btn_add_folder.property("variant") == "source-picker"
-    assert window.btn_add_files.toolTip() == window._tr.tr("add_files_tip")
-    assert window.btn_add_folder.toolTip() == window._tr.tr("add_folder_tip")
+    assert window.btn_add_files.toolTip() == window._formats_text("add_files_tip")
+    assert window.btn_add_folder.toolTip() == window._formats_text("add_folder_tip")
     assert window.btn_export.text() == window._tr.tr("tray_export")
     assert window.btn_open_in.text() == window._tr.tr("input_folder_button")
     assert window.btn_open_out.text() == window._tr.tr("output_folder_button")

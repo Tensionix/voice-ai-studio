@@ -375,6 +375,8 @@ print("selected providers:", ", ".join(providers) or "onnxruntime default")
 for model_name in ("gigaam-v3-e2e-ctc", "gigaam-v3-e2e-rnnt"):
     print(f"GigaAM payload: {model_name}")
     onnx_asr.load_model(model_name, **onnx_asr_kwargs())
+print("Silero VAD payload (pause-based splitting of long audio)")
+onnx_asr.load_vad("silero", providers=["CPUExecutionProvider"])
 print("GigaAM payloads OK")
 "@
     Invoke-PythonCode -Name "preload_gigaam_payloads.py" -Code $preloadCode

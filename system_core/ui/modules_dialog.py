@@ -14,7 +14,7 @@ from __future__ import annotations
 import importlib
 import re
 
-from PySide6.QtCore import Qt, Signal
+from PySide6.QtCore import Qt, QTimer, Signal
 from PySide6.QtWidgets import (
     QDialog,
     QFrame,
@@ -33,7 +33,15 @@ from PySide6.QtWidgets import (
 from ..core.capabilities import STATE_MISSING, STATE_PARTIAL, STATE_READY, list_capabilities
 from ..core.credentials import mask_api_key, read_api_key, write_api_key
 from ..core.editions import EDITION_STUDIO, current_edition
-from ..core.modules import ModuleInfo, list_modules
+from ..core.modules import (
+    NOT_NEEDED,
+    OPTIONAL,
+    RECOMMENDED,
+    ModuleInfo,
+    list_modules,
+    missing_recommended_modules,
+    module_recommendation,
+)
 from ..core.paths import ProjectPaths
 from .i18n import Translator
 from .icons import icon
@@ -52,6 +60,11 @@ class ModulesPanel(QWidget):
 
     log_line = Signal(str)
     module_installed = Signal(str, int)
+    # Hardware detection finished (successfully or not): recommendations are
+    # final from now on. Used by the first-run download prompt.
+    profile_resolved = Signal()
+    # A multi-module install queue ended: (installed ok, total queued).
+    queue_finished = Signal(int, int)
 
     def __init__(
         self,
@@ -68,6 +81,10 @@ class ModulesPanel(QWidget):
         self._mic_worker: MicrophoneCheckWorker | None = None
         self._profile_worker: LocalHardwareWorker | None = None
         self._profile = None
+        self.profile_is_resolved = False
+        self._queue: list[ModuleInfo] = []
+        self._queue_total = 0
+        self._queue_ok = 0
         self._rows: dict[str, tuple[QLabel, QPushButton]] = {}
         self._module_frames: dict[str, QFrame] = {}
         self._module_badges: dict[str, QLabel] = {}
@@ -218,6 +235,7 @@ class ModulesPanel(QWidget):
         self._profile = profile
         self._refresh_install_profile()
         self._refresh_module_recommendations()
+        self._mark_profile_resolved()
 
     def _on_profile_failed(self, message: str) -> None:
         self._profile_summary.setText(
@@ -225,29 +243,26 @@ class ModulesPanel(QWidget):
         )
         self._profile_plan.setText(self._tr.tr("install_profile_plan_safe"))
         self._refresh_module_recommendations()
+        self._mark_profile_resolved()
+
+    def _mark_profile_resolved(self) -> None:
+        if self.profile_is_resolved:
+            return
+        self.profile_is_resolved = True
+        self.profile_resolved.emit()
+
+    def missing_recommended_modules(self) -> list[ModuleInfo]:
+        """Recommended-for-this-computer modules that are still not installed."""
+        return missing_recommended_modules(self._paths, self._profile)
+
+    _RECOMMENDATION_KEYS = {
+        RECOMMENDED: "mod_rec_recommended",
+        OPTIONAL: "mod_rec_optional",
+        NOT_NEEDED: "mod_rec_not_needed",
+    }
 
     def _recommendation_key(self, mod: ModuleInfo) -> str:
-        edition = current_edition(self._paths)
-        profile = self._profile
-        has_nvidia = bool(getattr(profile, "has_nvidia", False))
-        has_windows_gpu = bool(
-            getattr(profile, "has_nvidia", False)
-            or getattr(profile, "has_amd", False)
-            or getattr(profile, "has_intel", False)
-        )
-        if mod.key in {"ffmpeg", "live", "wheel_cache", "gigaam", "vulkan", "whispercpp_models"}:
-            return "mod_rec_recommended"
-        if mod.key == "gpu":
-            return "mod_rec_recommended" if edition == EDITION_STUDIO and has_nvidia else "mod_rec_not_needed"
-        if mod.key == "restore_rtx":
-            if mod.is_installed(self._paths):
-                return "mod_rec_not_needed"
-            return "mod_rec_optional" if edition == EDITION_STUDIO and has_nvidia else "mod_rec_not_needed"
-        if mod.key == "restore_intel":
-            if mod.is_installed(self._paths):
-                return "mod_rec_not_needed"
-            return "mod_rec_optional" if has_windows_gpu and not has_nvidia else "mod_rec_not_needed"
-        return "mod_rec_optional"
+        return self._RECOMMENDATION_KEYS[module_recommendation(mod, self._paths, self._profile)]
 
     def _recommendation_color(self, key: str) -> str:
         if key == "mod_rec_recommended":
@@ -681,6 +696,50 @@ class ModulesPanel(QWidget):
         self._set_busy(False)
         self._refresh_all()
         self.module_installed.emit(mod.key, code)
+        if self._queue_total:
+            # Count by the real post-install check, not the exit code alone.
+            if code == 0 and mod.is_installed(self._paths):
+                self._queue_ok += 1
+            if self._queue:
+                # Let the finished worker unwind before the next one starts.
+                QTimer.singleShot(0, self._run_next_queued)
+            else:
+                ok, total = self._queue_ok, self._queue_total
+                self._queue_total = 0
+                self._queue_ok = 0
+                self.queue_finished.emit(ok, total)
+
+    # --- install queue (first-run prompt) ----------------------------------
+    def install_queue(self, keys: list[str]) -> bool:
+        """Install several modules one after another, in catalog order.
+
+        Returns False when nothing was queued (busy, or no known keys)."""
+        if self.is_busy():
+            return False
+        wanted = set(keys)
+        queue = [mod for mod in list_modules(self._paths) if mod.key in wanted]
+        if not queue:
+            return False
+        self._queue = queue
+        self._queue_total = len(queue)
+        self._queue_ok = 0
+        self._run_next_queued()
+        return True
+
+    def _run_next_queued(self) -> None:
+        if not self._queue:
+            return
+        mod = self._queue.pop(0)
+        self._install(mod)
+        if self._worker is None or not self._worker.isRunning():
+            # Installer missing or refused to start: move on to the next one.
+            if self._queue:
+                QTimer.singleShot(0, self._run_next_queued)
+            else:
+                ok, total = self._queue_ok, self._queue_total
+                self._queue_total = 0
+                self._queue_ok = 0
+                self.queue_finished.emit(ok, total)
 
     # --- microphone check ---------------------------------------------------
     def _run_mic_check(self) -> None:

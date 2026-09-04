@@ -43,6 +43,14 @@ def supported_extensions_label() -> str:
     return ", ".join(ext[1:].upper() for ext in supported_extensions())
 
 
+def audio_extensions_label() -> str:
+    return ", ".join(ext[1:].upper() for ext in sorted(AUDIO_EXTS))
+
+
+def video_extensions_label() -> str:
+    return ", ".join(ext[1:].upper() for ext in sorted(VIDEO_EXTS))
+
+
 def probe_media(paths: ProjectPaths, source: Path) -> MediaInfo:
     if not source.exists():
         raise RuntimeError(f"Input file does not exist: {source}")

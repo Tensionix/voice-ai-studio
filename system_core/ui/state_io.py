@@ -83,3 +83,30 @@ def save_tab_order(paths: ProjectPaths, name: str, order: list[str]) -> None:
         state["tab_order"] = groups
     groups[name] = list(order)
     _save_state(paths, state)
+
+
+# --- first-run setup prompt ---------------------------------------------------
+SETUP_PROMPT_INSTALL = "install"
+SETUP_PROMPT_LATER = "later"
+SETUP_PROMPT_NEVER = "never"
+
+
+def load_setup_prompt_answer(paths: ProjectPaths) -> str:
+    """Last answer given to the first-run download prompt ('' when never asked)."""
+    state = _load_state(paths)
+    entry = state.get("setup_prompt")
+    if not isinstance(entry, dict):
+        return ""
+    answer = str(entry.get("answer", "") or "").strip().lower()
+    return answer if answer in {SETUP_PROMPT_INSTALL, SETUP_PROMPT_LATER, SETUP_PROMPT_NEVER} else ""
+
+
+def save_setup_prompt_answer(paths: ProjectPaths, answer: str) -> None:
+    from datetime import datetime, timezone
+
+    state = _load_state(paths)
+    state["setup_prompt"] = {
+        "answer": str(answer),
+        "answered_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    }
+    _save_state(paths, state)

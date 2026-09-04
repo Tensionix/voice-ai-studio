@@ -114,12 +114,18 @@ class InstallWorker(QThread):
                 self.log.emit(line)
 
         try:
+            # Keep the script path as its own argument: a single "set ... &&
+            # call ..." string gets its inner quotes escaped as \" by
+            # subprocess, which cmd.exe does not understand, so any project
+            # path with spaces failed with "is not recognized as a command".
+            # AUDION_NO_PAUSE travels through the environment instead.
             result = run_process(
-                ["cmd", "/c", f'set "AUDION_NO_PAUSE=1" && call "{self._script}"'],
+                ["cmd", "/c", "call", str(self._script)],
                 cwd=self._paths.root,
                 log=_log,
                 cancel=lambda: self._cancel or self.isInterruptionRequested(),
                 check=False,
+                extra_env={"AUDION_NO_PAUSE": "1"},
             )
             self.done.emit(result.exit_code)
         except Exception as exc:

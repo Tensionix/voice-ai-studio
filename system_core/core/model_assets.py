@@ -45,6 +45,22 @@ WHISPERCPP_MODEL_ASSETS: tuple[ModelAsset, ...] = (
 )
 
 
+# Silero VAD (istupakov/silero-vad-onnx) lands in the same Hugging Face cache as
+# the GigaAM payloads. GigaAM file transcription uses it to cut long audio at
+# pauses instead of at fixed 45 s marks.
+GIGAAM_VAD_MODEL = "silero"
+_GIGAAM_VAD_REPO_DIR = "models--istupakov--silero-vad-onnx"
+
+
+def gigaam_vad_cache_dir(paths: ProjectPaths) -> Path:
+    return paths.models / "huggingface" / "hub" / _GIGAAM_VAD_REPO_DIR
+
+
+def gigaam_vad_available(paths: ProjectPaths) -> bool:
+    """True when the Silero VAD payload is already in the local HF cache."""
+    return (gigaam_vad_cache_dir(paths) / "snapshots").is_dir()
+
+
 def whispercpp_model_assets() -> tuple[ModelAsset, ...]:
     return WHISPERCPP_MODEL_ASSETS
 

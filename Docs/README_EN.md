@@ -46,6 +46,16 @@ the user downloads them.
 Until the models are installed, transcription will not start: the window opens,
 but there is nothing to recognise with.
 
+**On the first start the app offers to download what is missing.** The
+"Download models and engines" window lists the modules with their download
+size: GigaAM, whisper.cpp CUDA with the Turbo model, the Large V2 model and,
+on an NVIDIA machine, the speaker-separation layer; about 10.6 GB together.
+"Download and install" installs them one after another; progress is shown on
+the Maintenance page, and once everything is in place every mode there is
+green. "Later" postpones the question until the next start, "Don't ask again"
+hides the window for good. Modules can still be installed by hand on the same
+page.
+
 ## Editions
 
 | edition | for what | engines |

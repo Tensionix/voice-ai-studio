@@ -106,6 +106,12 @@ def decode_process_bytes(data: bytes) -> str:
     if data.startswith(b"\xef\xbb\xbf"):
         add("utf-8-sig")
     add("utf-8")
+    # Strict UTF-8 that decodes is UTF-8: cp1251/cp866 Cyrillic never forms
+    # valid multi-byte sequences. Without this shortcut the Hugging Face
+    # progress bar (U+2588 blocks, e2 96 88) scores higher as the cp1251
+    # letters "тЦИ" and the log fills with mojibake.
+    if candidates and any(byte >= 0x80 for byte in data):
+        return candidates[0]
     for encoding in _fallback_encodings():
         add(encoding)
     if not candidates:
@@ -125,14 +131,19 @@ def run_process(
     log: LogCallback | None = None,
     cancel: CancelCallback | None = None,
     check: bool = True,
+    extra_env: dict[str, str] | None = None,
 ) -> ProcessResult:
-    """Run a child process hidden, streaming stdout/stderr lines to `log`."""
+    """Run a child process hidden, streaming stdout/stderr lines to `log`.
+
+    `extra_env` adds/overrides environment variables for the child only."""
     if not command:
         raise ValueError("Command is empty.")
 
     env = os.environ.copy()
     env["PYTHONUTF8"] = "1"
     env["PYTHONIOENCODING"] = "utf-8"
+    if extra_env:
+        env.update({str(key): str(value) for key, value in extra_env.items()})
 
     process = subprocess.Popen(
         command,

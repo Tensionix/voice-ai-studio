@@ -1,6 +1,6 @@
 schema_version: 1
 edition: studio
-compute_mode: cuda
+compute_mode: api
 language: auto
 ui_language: en
 ui_theme: graphite

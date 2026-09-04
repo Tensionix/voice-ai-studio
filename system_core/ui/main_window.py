@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 from datetime import datetime
+import os
 from pathlib import Path
 from typing import Any, Optional
 
@@ -48,7 +49,13 @@ from ..live.history import (
     OVERLAY_HISTORY_LIMIT,
 )
 from ..live.tray import VoiceTray
-from ..media.probe import is_supported, supported_extensions, supported_extensions_label
+from ..media.probe import (
+    audio_extensions_label,
+    is_supported,
+    supported_extensions,
+    supported_extensions_label,
+    video_extensions_label,
+)
 from ..media.recorder import FileRecorder, find_recordings
 from ..pipeline.queue import collect_sources
 from ..settings import DEFAULT_SETTINGS, load_settings
@@ -58,7 +65,17 @@ from .dictation_history import DictationHistoryDialog
 from .i18n import Translator
 from .icons import app_icon, icon
 from .settings_io import save_settings
-from .state_io import load_queue_files, load_tab_order, save_queue_files, save_tab_order
+from .setup_prompt import SetupPromptDialog
+from .state_io import (
+    SETUP_PROMPT_INSTALL,
+    SETUP_PROMPT_NEVER,
+    load_queue_files,
+    load_setup_prompt_answer,
+    load_tab_order,
+    save_queue_files,
+    save_setup_prompt_answer,
+    save_tab_order,
+)
 from .settings_panel import SettingsPanel
 from .tooltips import seed_tooltips
 from .widgets import (
@@ -155,6 +172,7 @@ class MainWindow(QMainWindow):
         self._really_quit = False
         self._log_expanded = False
         self._autosave_ready = False
+        self._setup_prompt_shown = False
         self._export_actions: list[tuple[Any, str]] = []
 
         self._settings_save_timer = QTimer(self)
@@ -208,12 +226,12 @@ class MainWindow(QMainWindow):
         splitter.addWidget(left)
         self._right_panel = self._build_right()
         splitter.addWidget(self._right_panel)
-        # The four subtitle controls intentionally stay on one line, so the
-        # settings side needs more of the initial 1600 px shell.  The queue
-        # remains comfortably usable at 500 px and both sides still resize.
-        splitter.setStretchFactor(0, 5)
-        splitter.setStretchFactor(1, 11)
-        splitter.setSizes([500, 1100])
+        # The left workspace (journal / queue) takes one third of the initial
+        # 1600 px shell; the settings side keeps two thirds so the four
+        # subtitle controls stay on one line. Both sides still resize.
+        splitter.setStretchFactor(0, 1)
+        splitter.setStretchFactor(1, 2)
+        splitter.setSizes([533, 1067])
 
         bottom_rule = QFrame()
         bottom_rule.setObjectName("ShellRule")
@@ -545,8 +563,62 @@ class MainWindow(QMainWindow):
         self.settings_panel.changed.connect(self._schedule_settings_save)
         self.settings_panel.changed.connect(self._update_run_summary)
         if hasattr(self.settings_panel, "modules_panel"):
-            self.settings_panel.modules_panel.log_line.connect(self._append_install_log)
-            self.settings_panel.modules_panel.module_installed.connect(self._on_module_installed)
+            panel = self.settings_panel.modules_panel
+            panel.log_line.connect(self._append_install_log)
+            panel.module_installed.connect(self._on_module_installed)
+            panel.queue_finished.connect(self._on_setup_queue_finished)
+            # Hardware detection runs in a child process; the prompt waits for
+            # it so the Studio GPU rows are classified correctly.
+            panel.profile_resolved.connect(self._maybe_show_setup_prompt)
+            if panel.profile_is_resolved:
+                QTimer.singleShot(0, self._maybe_show_setup_prompt)
+
+    # --- first-run download prompt -------------------------------------------
+    def setup_prompt_enabled(self) -> bool:
+        """Off in headless tests (`AUDION_SETUP_PROMPT=0`) and after 'never'."""
+        if os.environ.get("AUDION_SETUP_PROMPT", "1").strip() == "0":
+            return False
+        return load_setup_prompt_answer(self._paths) != SETUP_PROMPT_NEVER
+
+    def _maybe_show_setup_prompt(self) -> None:
+        if self._setup_prompt_shown or not self.setup_prompt_enabled():
+            return
+        panel = getattr(self.settings_panel, "modules_panel", None)
+        if panel is None or panel.is_busy():
+            return
+        missing = panel.missing_recommended_modules()
+        if not missing:
+            return
+        self._setup_prompt_shown = True
+        dialog = SetupPromptDialog(missing, self._tr, self)
+        dialog.finished.connect(lambda _code, d=dialog: self._on_setup_prompt_finished(d))
+        # Non-blocking modal: the main window keeps its event loop and workers.
+        dialog.open()
+
+    def _on_setup_prompt_finished(self, dialog: SetupPromptDialog) -> None:
+        answer = dialog.answer
+        keys = dialog.selected_keys()
+        dialog.deleteLater()
+        save_setup_prompt_answer(self._paths, answer)
+        if answer != SETUP_PROMPT_INSTALL or not keys:
+            return
+        panel = getattr(self.settings_panel, "modules_panel", None)
+        if panel is None:
+            return
+        self.settings_panel.show_section("settings_section_modules")
+        names = ", ".join(
+            self._tr.tr(mod.name_key)
+            for mod in panel.missing_recommended_modules()
+            if mod.key in keys
+        )
+        self._append_install_log(self._tr.tr("setup_prompt_queue_start").replace("{names}", names))
+        panel.install_queue(keys)
+
+    def _on_setup_queue_finished(self, ok: int, total: int) -> None:
+        key = "setup_prompt_queue_done" if ok >= total else "setup_prompt_queue_partial"
+        self._append_install_log(
+            self._tr.tr(key).replace("{ok}", str(ok)).replace("{total}", str(total))
+        )
 
     def _make_export_menu(self, parent: QWidget) -> QMenu:
         menu = QMenu(parent)
@@ -633,8 +705,17 @@ class MainWindow(QMainWindow):
         patterns = " ".join(f"*{ext}" for ext in supported_extensions())
         return f"{self._tr.tr('media_files')} ({patterns});;{self._tr.tr('all_files')} (*.*)"
 
+    def _formats_text(self, key: str) -> str:
+        """Fill {audio}/{video}/{formats} placeholders of a format hint string."""
+        return (
+            self._tr.tr(key)
+            .replace("{audio}", audio_extensions_label())
+            .replace("{video}", video_extensions_label())
+            .replace("{formats}", supported_extensions_label())
+        )
+
     def _update_format_hint(self) -> None:
-        text = self._tr.tr("supported_formats").replace("{formats}", supported_extensions_label())
+        text = self._formats_text("supported_formats")
         self.lbl_formats.setText(self._tr.tr("supported_formats_short"))
         self.lbl_formats.setToolTip(text)
         self.queue_view.setToolTip(text)
@@ -1208,9 +1289,9 @@ class MainWindow(QMainWindow):
             tr.tr("col_select"), tr.tr("col_file"), tr.tr("col_status")
         )
         self.lbl_add_sources.setText(tr.tr("add_sources"))
-        self.btn_add_files.setToolTip(tr.tr("add_files_tip"))
+        self.btn_add_files.setToolTip(self._formats_text("add_files_tip"))
         self.btn_add_files.setAccessibleName(tr.tr("add_files"))
-        self.btn_add_folder.setToolTip(tr.tr("add_folder_tip"))
+        self.btn_add_folder.setToolTip(self._formats_text("add_folder_tip"))
         self.btn_add_folder.setAccessibleName(tr.tr("add_folder"))
         self.btn_export.setText(tr.tr("tray_export"))
         self.btn_export.setToolTip(tr.tr("export_menu_hint"))

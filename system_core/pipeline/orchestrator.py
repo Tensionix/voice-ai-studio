@@ -108,6 +108,13 @@ def _effective_chunk_seconds(
 
     if mode == registry.MODE_VULKAN and engine == "gigaam":
         diar_cfg = settings.get("diarization", {})
+        if not bool(diar_cfg.get("enabled", False)):
+            # The GigaAM provider cuts every chunk into <=25 s pieces at the
+            # quietest points itself, so the pipeline chunk only decides how
+            # often progress is reported and cached.
+            return chunk_seconds
+        # Diarization aligns speaker turns to chunk-level text, which needs
+        # short chunks.
         local_chunk_seconds = float(diar_cfg.get("gigaam_chunk_seconds", 45))
         return max(1.0, min(chunk_seconds, local_chunk_seconds))
     return chunk_seconds

@@ -30,13 +30,14 @@ strings:
   add_sources:          {ru: "Добавить…",                   en: "Add…"}
   add_files:            {ru: "Файлы…",                      en: "Files…"}
   add_folder:           {ru: "Папку…",                      en: "Folder…"}
-  add_files_tip:        {ru: "Выбрать внешние медиафайлы. Они обрабатываются по исходным путям и не копируются в input.",
-                         en: "Choose external media files. They are processed at their original paths and are not copied into input."}
-  add_folder_tip:       {ru: "Выбрать папку. Поддерживаемые медиафайлы из неё и вложенных папок добавятся по исходным путям.",
-                         en: "Choose a folder. Supported media in it and its subfolders is added using the original paths."}
+  add_files_tip:        {ru: "Выбрать медиафайлы. Они остаются на своих местах и не копируются в input; готовые расшифровки (.transcript.json, .md, .srt, .vtt, .txt) ложатся рядом с каждым файлом. Аудио: {audio}. Видео: {video}.",
+                         en: "Choose media files. They stay where they are and are not copied into input; finished transcripts (.transcript.json, .md, .srt, .vtt, .txt) are saved next to each file. Audio: {audio}. Video: {video}."}
+  add_folder_tip:       {ru: "Выбрать папку. Все поддерживаемые файлы из неё и всех вложенных папок лягут в очередь плоским списком, а расшифровки — рядом с каждым файлом в его папке. Аудио: {audio}. Видео: {video}.",
+                         en: "Choose a folder. Every supported file in it and in all nested subfolders joins the queue as a flat list, and each transcript is saved next to its file in that folder. Audio: {audio}. Video: {video}."}
   queue_hint:           {ru: "Перетащите файлы или папку сюда", en: "Drag files or a folder here"}
   supported_formats_short: {ru: "Форматы",                  en: "Formats"}
-  supported_formats:    {ru: "Поддерживаемые форматы: {formats}", en: "Supported formats: {formats}"}
+  supported_formats:    {ru: "Поддерживаемые форматы. Аудио: {audio}. Видео: {video}. Папки добавляются со всеми вложенными папками; расшифровки ложатся рядом с файлами.",
+                         en: "Supported formats. Audio: {audio}. Video: {video}. Folders are added with all nested subfolders; transcripts are saved next to the files."}
   unsupported_files_skipped: {ru: "Пропущены неподдерживаемые файлы: {count}. Поддерживаемые форматы: {formats}",
                               en: "Skipped unsupported files: {count}. Supported formats: {formats}"}
   media_files:          {ru: "Медиафайлы",                  en: "Media files"}
@@ -476,6 +477,7 @@ strings:
   cap_check_onnx_asr:   {ru: "onnx-asr",                    en: "onnx-asr"}
   cap_check_onnxruntime: {ru: "ONNX Runtime",               en: "ONNX Runtime"}
   cap_check_gigaam_payload: {ru: "GigaAM v3 payload",       en: "GigaAM v3 payload"}
+  cap_check_gigaam_vad: {ru: "Silero VAD (нарезка по паузам)", en: "Silero VAD (pause-based splitting)"}
   cap_check_faster_whisper: {ru: "faster-whisper",          en: "faster-whisper"}
   cap_check_ctranslate2: {ru: "CTranslate2",                en: "CTranslate2"}
   cap_check_whispercpp_binary: {ru: "whisper.cpp binary",   en: "whisper.cpp binary"}
@@ -583,8 +585,8 @@ strings:
   mod_live_desc:        {ru: "Захват микрофона для push-to-talk диктовки из трея (sounddevice).",
                          en: "Microphone capture for push-to-talk dictation from the tray (sounddevice)."}
   mod_gigaam:           {ru: "GigaAM ONNX pack",            en: "GigaAM ONNX pack"}
-  mod_gigaam_desc:      {ru: "onnx-asr + ONNX Runtime provider + прогрев GigaAM v3 CTC/RNN-T payloads.",
-                         en: "onnx-asr + ONNX Runtime provider + preloaded GigaAM v3 CTC/RNN-T payloads."}
+  mod_gigaam_desc:      {ru: "onnx-asr + ONNX Runtime provider + прогрев GigaAM v3 CTC/RNN-T payloads + Silero VAD для нарезки длинных записей по паузам.",
+                         en: "onnx-asr + ONNX Runtime provider + preloaded GigaAM v3 CTC/RNN-T payloads + Silero VAD to cut long recordings at pauses."}
   mod_restore_intel:    {ru: "Восстановить Audion Voice AI для Intel/AMD GPU",
                          en: "Restore Audion Voice AI for Intel/AMD GPU"}
   mod_restore_intel_desc: {ru: "Переустанавливает GigaAM ONNX provider в DirectML. Используйте после переноса CUDA/RTX-пакета на Intel/AMD/обычный Windows GPU.",
@@ -605,6 +607,29 @@ strings:
   mod_gpu:              {ru: "Диаризация на GPU",           en: "GPU diarization"}
   mod_gpu_desc:         {ru: "torch (CUDA) + pyannote для разметки спикеров. Нужна видеокарта NVIDIA.",
                          en: "torch (CUDA) + pyannote for speaker labels. Requires an NVIDIA GPU."}
+
+  # --- first-run download prompt ---
+  setup_prompt_title:   {ru: "Докачать модели и движки",     en: "Download models and engines"}
+  setup_prompt_intro:   {ru: "Веса моделей в раздачу не входят: у них свои лицензии. Чтобы распознавание работало и все режимы на странице «Обслуживание» горели зелёным, нужно скачать перечисленное ниже. Снимите галочку с того, что пока не нужно.",
+                         en: "Model weights are not part of the distribution: they carry their own licences. To make recognition work and turn every mode on the Maintenance page green, download the items below. Untick anything you do not need yet."}
+  setup_prompt_total:   {ru: "Всего к скачиванию: {size}",   en: "Total download: {size}"}
+  setup_prompt_note:    {ru: "Скачивание идёт с HuggingFace и GitHub; ход виден на странице «Обслуживание» и в «Журнале». Программой можно пользоваться во время загрузки. Пропущенное ставится там же, кнопкой «Установить».",
+                         en: "Downloads come from HuggingFace and GitHub; progress is shown on the Maintenance page and in the Journal. The app stays usable meanwhile. Anything skipped can be installed there later with the Install button."}
+  setup_prompt_install: {ru: "Скачать и установить",         en: "Download and install"}
+  setup_prompt_install_tip: {ru: "Запустить установку отмеченных модулей по очереди. Окно закроется, ход установки показывает страница «Обслуживание».",
+                             en: "Install the ticked modules one after another. This window closes; the Maintenance page shows the progress."}
+  setup_prompt_later:   {ru: "Позже",                        en: "Later"}
+  setup_prompt_later_tip: {ru: "Ничего не скачивать сейчас. Окно появится снова при следующем запуске программы.",
+                           en: "Download nothing now. The window will appear again on the next start."}
+  setup_prompt_never:   {ru: "Больше не предлагать",         en: "Don't ask again"}
+  setup_prompt_never_tip: {ru: "Скрыть это окно навсегда. Модули по-прежнему ставятся вручную на странице «Обслуживание».",
+                           en: "Hide this window for good. Modules can still be installed manually on the Maintenance page."}
+  setup_prompt_queue_start: {ru: "Установка модулей по очереди: {names}.",
+                             en: "Installing modules one after another: {names}."}
+  setup_prompt_queue_done: {ru: "Установка завершена: готово {ok} из {total}. Все режимы готовы.",
+                            en: "Installation finished: {ok} of {total} done. All modes are ready."}
+  setup_prompt_queue_partial: {ru: "Установка завершена: готово {ok} из {total}. Неготовые режимы отмечены на странице «Обслуживание»; повторите установку оттуда.",
+                               en: "Installation finished: {ok} of {total} done. Modes that are still not ready are marked on the Maintenance page; retry from there."}
 
   # --- subtitles ---
   subtitles:            {ru: "Субтитры",                    en: "Subtitles"}

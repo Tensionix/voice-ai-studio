@@ -173,6 +173,13 @@ def build_stylesheet(theme: ThemeInfo) -> str:
         border: 1px solid {border2};
         border-radius: 12px;
     }}
+    /* First-run download prompt rows: same card, gentler corners. */
+    QFrame#SetupPromptRow {{
+        background-color: {bg2};
+        border: 1px solid {border2};
+        border-radius: 6px;
+    }}
+    QFrame#SetupPromptRow QWidget {{ background: transparent; }}
     QFrame#Card QWidget, QWidget#CardBody, QWidget#InlineWrap, QWidget#SettingsSectionPage {{
         background: transparent;
     }}
@@ -638,13 +645,46 @@ def build_stylesheet(theme: ThemeInfo) -> str:
         border-radius: 6px;
     }}
     QScrollArea {{ border: none; background: transparent; }}
-    QScrollBar:vertical {{ background: {bg}; width: 12px; margin: 0; }}
-    QScrollBar::handle:vertical {{ background: {border}; border-radius: 6px; min-height: 24px; }}
-    QScrollBar::handle:vertical:hover {{ background: {accent3}; }}
-    QScrollBar::add-line, QScrollBar::sub-line {{ height: 0; }}
+    /* Scroll bars: a plain dark pill on a transparent track. The Windows
+       style paints a dither pattern on add-page/sub-page and around the
+       handle unless every sub-control is styled explicitly. */
+    QScrollBar:vertical {{
+        background: transparent;
+        border: none;
+        width: 12px;
+        margin: 0 2px 0 2px;
+    }}
+    QScrollBar:horizontal {{
+        background: transparent;
+        border: none;
+        height: 12px;
+        margin: 2px 0 2px 0;
+    }}
+    QScrollBar::handle:vertical {{
+        background: {bg3};
+        border: none;
+        border-radius: 4px;
+        min-height: 32px;
+    }}
+    QScrollBar::handle:horizontal {{
+        background: {bg3};
+        border: none;
+        border-radius: 4px;
+        min-width: 32px;
+    }}
+    QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {{ background: {border}; }}
+    QScrollBar::handle:vertical:pressed, QScrollBar::handle:horizontal:pressed {{ background: {fg3}; }}
+    QScrollBar::add-line, QScrollBar::sub-line {{
+        height: 0;
+        width: 0;
+        border: none;
+        background: none;
+    }}
+    QScrollBar::add-page, QScrollBar::sub-page {{ background: transparent; border: none; }}
     QScrollArea#SettingsScroll QScrollBar:vertical {{
         background: transparent;
-        margin: 46px 0 12px 0;
+        /* Same vertical span as the splitter line and the cards. */
+        margin: 58px 2px 0 2px;
     }}
     QScrollArea#SettingsScroll > QWidget#qt_scrollarea_corner {{
         background: transparent;
@@ -676,7 +716,9 @@ def build_stylesheet(theme: ThemeInfo) -> str:
     QSplitter#MainSplitter::handle:horizontal {{
         background: transparent;
         border-left: 1px solid {border2};
-        margin: 46px 5px 12px 5px;
+        /* Span exactly the cards beside it: they start 56 px below the
+           splitter top (tab bar + spacing) and end flush with its bottom. */
+        margin: 56px 5px 0 5px;
     }}
     """.strip()
 

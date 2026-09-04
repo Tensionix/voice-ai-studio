@@ -49,7 +49,17 @@ HuggingFace — so you download them yourself, under your own account.
 Until the models are installed, transcription will not run: the window opens,
 but there is nothing behind it to recognise speech.
 
-Run `builder_main.cmd` and pick, in order:
+On the first start the app offers to download what is missing: the
+"Download models and engines" window lists the modules with their download
+size: GigaAM, whisper.cpp CUDA with the Turbo model, the Large V2 model and,
+on an NVIDIA machine, the speaker-separation layer; about 10.6 GB together.
+"Download and install" installs them one after another; progress is shown on
+the Maintenance page, and once everything is in place every mode there is
+green. "Later" postpones the question until the next start, "Don't ask again"
+hides the window for good. Modules can still be installed by hand on the same
+page.
+
+The same can be done by hand: run `builder_main.cmd` and pick, in order:
 
 | # | Menu entry | What it installs |
 |---|---|---|
@@ -176,6 +186,7 @@ Local models:
 - whisper.cpp - CPU fallback in Live and CUDA/cuBLAS GPU pack in Studio;
 - backend: auto, CUDA, DirectML, or CPU fallback;
 - GigaAM Live keeps the model warm until the app exits;
+- GigaAM cuts long recordings into pieces of up to 25 seconds at the quietest points (by Silero VAD, installed with the GigaAM ONNX pack; by signal energy without it). Nothing is discarded, quiet echoing speech still reaches the model, and every piece gets start and end times;
 - unload/buffer threshold applies to whisper.cpp live scenarios.
 
 Install the required runtimes/payloads and models from Setup before using this mode. For GigaAM, run `Dependency wheel cache` before `GigaAM ONNX pack`: Live creates `install\wheels\common`, `directml`, and `cpu`; Studio also creates `cuda`. `GigaAM ONNX pack` installs `onnx-asr`, an ONNX Runtime provider, and preloads `gigaam-v3-e2e-ctc`/`gigaam-v3-e2e-rnnt` into `models\huggingface`. On Windows, auto uses DirectML as the lightweight universal backend; Studio uses CUDA on NVIDIA.

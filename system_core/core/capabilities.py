@@ -20,7 +20,7 @@ from .editions import (
     resolve_whispercpp_model,
     whispercpp_cuda_ready,
 )
-from .model_assets import whispercpp_model_assets
+from .model_assets import gigaam_vad_available, whispercpp_model_assets
 from .paths import ProjectPaths
 
 STATE_READY = "ready"
@@ -131,6 +131,13 @@ def gigaam_capability(paths: ProjectPaths) -> CapabilityStatus:
         CapabilityCheck("onnx_asr", _has("onnx_asr"), "cap_check_onnx_asr"),
         CapabilityCheck("onnxruntime", _has("onnxruntime"), "cap_check_onnxruntime"),
         CapabilityCheck("gigaam_payload", marker.exists(), "cap_check_gigaam_payload", str(marker)),
+        CapabilityCheck(
+            "gigaam_vad",
+            gigaam_vad_available(paths),
+            "cap_check_gigaam_vad",
+            str(paths.models / "huggingface"),
+            required=False,
+        ),
     )
     return _cap("gigaam", "cap_gigaam", "cap_gigaam_desc", checks, module_key="gigaam")
 
