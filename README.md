@@ -8,14 +8,14 @@
   <a href="https://github.com/Tensionix/voice-ai-studio/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/voice-ai-studio?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
 </p>
 
-**Version 2.2.1** · 2026-09-05 · 4.6 MB
+**Version 2.2.1** · 2026-09-05 · 2,461.3 MB
 
-- [Direct download](https://dl.audion.dev/voice-ai-studio/2.2.1/Audion_Voice_AI_Studio_v2.2.1.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/voice-ai-studio/2.2.1/Audion_Voice_AI_Studio_v2.2.1_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/voice-ai-studio) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: cb654219a7a28ca1fb6e70ccc5624c0d544f9f365bbc6b73ca4b127b21be1f27`
+`SHA-256: bf0bf393409f851ff916f9afbeaf11e683c146ae13fd0407f22e6019add7ac60`
 
 ---
 
@@ -58,9 +58,9 @@ the recording never leaves the computer.
 
 ## What Has to Be Installed Separately
 
-**Model weights are not part of the distribution** — together they come to about
-eight gigabytes: the GigaAM cache, whisper.cpp with its large models, and the
-speaker separation layer.
+**Model weights are not part of the distribution** — about 7 GB: the GigaAM cache
+and whisper.cpp with the Turbo and Large V2 models; with the speaker separation
+layer (NVIDIA only) about 10.6 GB.
 
 The weights carry their own licences, separate from the program's, and the terms
 for speaker separation are accepted **personally, under your own account** — so

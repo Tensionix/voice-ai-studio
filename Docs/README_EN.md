@@ -35,9 +35,9 @@ the recording never leaves the computer.
 
 ## What Has to Be Installed Separately
 
-**Model weights are not part of the distribution** — together they come to about
-eight gigabytes: the GigaAM cache, whisper.cpp with its large models, and the
-speaker separation layer.
+**Model weights are not part of the distribution** — about 7 GB: the GigaAM cache
+and whisper.cpp with the Turbo and Large V2 models; with the speaker separation
+layer (NVIDIA only) about 10.6 GB.
 
 The weights carry their own licences, separate from the program's, and the terms
 for speaker separation are accepted **personally, under your own account** — so

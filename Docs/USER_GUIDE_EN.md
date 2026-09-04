@@ -40,9 +40,9 @@ Use **Audion Voice AI Studio** when you have a CUDA workstation and need fast lo
 
 ### Installing the recognition models
 
-The build ships without model weights — together they come to about eight
-gigabytes: the GigaAM cache, whisper.cpp with large-v2 and large-v3-turbo, and
-pyannote for speaker separation. Weights carry their own licences, apart from
+The build ships without model weights — about 7 GB: the GigaAM cache and
+whisper.cpp with large-v2 and large-v3-turbo; with pyannote for speaker
+separation (NVIDIA only) about 10.6 GB. Weights carry their own licences, apart from
 the licence of this program, and pyannote's terms are accepted personally on
 HuggingFace — so you download them yourself, under your own account.
 
@@ -76,17 +76,16 @@ Open `builder_main.cmd` or the `Maintenance` tab in the GUI.
 
 Recommended order:
 
-1. Use `builder_main.cmd` to check folder structure and install Python runtime if the app is not built yet.
-2. Open the GUI `Maintenance` tab and check the top `Recommended setup` card.
-3. Install FFmpeg.
-4. Install Live dependencies.
-5. Install `Dependency wheel cache`: it downloads GigaAM/ONNX Runtime wheels into `install\wheels`.
-6. Click `Check` in the `Microphone check` card: it briefly opens Audion's input stream and does not save audio.
-7. Install GigaAM ONNX pack if local GigaAM is needed.
-8. Install whisper.cpp pack if the local whisper.cpp backend is needed: Live uses CPU fallback, Studio uses CUDA/cuBLAS.
-9. Run base verify/smoke checks.
-10. In Studio, install faster-whisper and CUDA/pyannote payloads.
-11. In Studio, install the Large V2 model only when large-v2 quality comparisons against turbo are needed.
+1. Start the app. On the first start the "Download models and engines" window installs everything recommended with one button; the remaining steps are for manual repair or checks.
+2. `builder_main.cmd` is only needed when the app is not built yet: it checks the folder structure and installs the Python runtime.
+3. FFmpeg ships with the distribution. `Reinstall` on the `Maintenance` page is only needed after an NVIDIA driver change, because the build is picked to match the driver.
+4. Live dependencies (microphone, streaming dictation) are installed by the GUI itself at start-up from `wheelhouse\live`, without Internet access. The manual row remains available for repair.
+5. `Dependency wheel cache` (`wheelhouse`) ships with the distribution and shows as `Installed`. `Reinstall` is only needed if the folder was deleted: it downloads the GigaAM/ONNX Runtime wheels again.
+6. Click `Check` in the `Microphone check` card: it tests the Windows default recording device, then a separate communications default, including native 44.1/48 kHz modes. Audio is not saved.
+7. `GigaAM ONNX pack`: onnx-asr, the ONNX Runtime provider, the GigaAM v3 models and Silero VAD for splitting long recordings.
+8. `whisper.cpp pack`: Live installs the CPU build, Studio the CUDA/cuBLAS build; the Turbo model comes with it.
+9. Studio: `whisper.cpp Large V2 model` is the primary file model in CUDA mode. `GPU diarization` (torch + pyannote) is optional and NVIDIA only.
+10. Run base verify/smoke checks.
 
 The Maintenance tab shows the detected GPU, recommended profile, progress, speed, and ETA. Installer output is routed automatically to the left `Activity log`; there is no empty terminal area on the right. Rows are marked `Recommended`, `Optional`, or `Not needed`; non-recommended actions remain legible and available.
 
@@ -146,7 +145,7 @@ Live dictation has a separate **Primary language**. Its default is `Window layou
 
 Results are saved next to the source file by default. This is better for large archives because the transcript stays with the original recording.
 
-External files selected through the picker or drag-and-drop are not copied into the project. The queue retains their original paths and processes them in place. Only WAV files recorded by Audion itself are created automatically in `input`. The `Input` and `Output` buttons share the remaining width and open those project folders.
+A folder is added with all its subfolders: supported files join the queue as a flat list and each transcript is saved next to its file in that folder. The full format list (17 audio and 18 video) is shown in the tooltips of `Files…`, `Folder…` and the `Formats` label. External files selected through the picker or drag-and-drop are not copied into the project. The queue retains their original paths and processes them in place. Only WAV files recorded by Audion itself are created automatically in `input`. The `Input` and `Output` buttons share the remaining width and open those project folders.
 
 ## 7. Supported Formats
 
@@ -189,7 +188,7 @@ Local models:
 - GigaAM cuts long recordings into pieces of up to 25 seconds at the quietest points (by Silero VAD, installed with the GigaAM ONNX pack; by signal energy without it). Nothing is discarded, quiet echoing speech still reaches the model, and every piece gets start and end times;
 - unload/buffer threshold applies to whisper.cpp live scenarios.
 
-Install the required runtimes/payloads and models from Setup before using this mode. For GigaAM, run `Dependency wheel cache` before `GigaAM ONNX pack`: Live creates `install\wheels\common`, `directml`, and `cpu`; Studio also creates `cuda`. `GigaAM ONNX pack` installs `onnx-asr`, an ONNX Runtime provider, and preloads `gigaam-v3-e2e-ctc`/`gigaam-v3-e2e-rnnt` into `models\huggingface`. On Windows, auto uses DirectML as the lightweight universal backend; Studio uses CUDA on NVIDIA.
+Install the required runtimes/payloads and models from the `Maintenance` page before using this mode (or accept the first-start window). The GigaAM/ONNX Runtime wheels ship in the distribution's `wheelhouse`: `GigaAM ONNX pack` installs `onnx-asr` and the ONNX Runtime provider from them, preloads `gigaam-v3-e2e-ctc`/`gigaam-v3-e2e-rnnt` into `models\huggingface` and fetches Silero VAD. On Windows, auto uses DirectML as the lightweight universal backend; Studio uses CUDA on NVIDIA.
 
 In Studio, `Transcription + diarization` runs `pyannote` as a second pass for local file engines, including GigaAM. For GigaAM, the app automatically uses shorter chunks (`diarization.gigaam_chunk_seconds`, 45 seconds by default), because GigaAM returns chunk-level text rather than word timestamps. Live mode does not use pyannote.
 
@@ -212,10 +211,10 @@ The `CUDA` card includes a Faster-Whisper profile switch:
 
 Typical flow:
 
-1. Install faster-whisper.
-2. Install CUDA/pyannote payloads.
+1. Install `whisper.cpp pack` (CUDA/cuBLAS) and `whisper.cpp Large V2 model`; the first-start window does this by itself.
+2. Install `GPU diarization` (CUDA/pyannote) when speaker labels are needed.
 3. Run verify.
-4. Download large-v2 only when comparative tests against turbo need it.
+4. Turbo remains the fast profile for comparisons against large-v2.
 5. Choose the Studio GPU engine: GigaAM CUDA, whisper.cpp cuBLAS, or faster-whisper CUDA.
 6. For speaker labels, choose `Transcription + diarization`.
 7. Run a short smoke test on a small file.
@@ -347,7 +346,10 @@ The GUI module catalog and `builder_main.cmd` are synchronized. The target profi
 - Make sure FFmpeg is installed.
 - Check API keys for OpenAI, xAI, or ElevenLabs.
 - For Local Models, check the model and runtime.
-- For CUDA, check NVIDIA driver, PyTorch, and faster-whisper.
+- For CUDA, check the NVIDIA driver and that the CUDA/cuBLAS `whisper.cpp pack` with the Large V2 model is installed; PyTorch is only needed for diarization.
+- Long GigaAM recordings are cut into pieces of up to 25 seconds automatically. If a piece still fails with a DirectML error, update the GPU driver or switch the backend to CPU.
+- Studio on a machine without NVIDIA: turn off `Transcription + diarization`, otherwise the pipeline stops at the missing pyannote after transcription.
+- If models were installed by hand and the `Mode readiness` matrix is not green, open `Maintenance`: the row marked `Not installed` shows what is missing.
 - Use Reset App if the issue looks like broken UI configuration.
 
 ## Studio Batch Checklist
