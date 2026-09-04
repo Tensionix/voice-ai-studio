@@ -8,14 +8,14 @@
   <a href="https://github.com/Tensionix/voice-ai-studio/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/voice-ai-studio?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
 </p>
 
-**Version 2.2.2** · 2026-09-05 · 4.6 MB
+**Version 2.2.2** · 2026-09-05 · 2,461.4 MB
 
-- [Direct download](https://dl.audion.dev/voice-ai-studio/2.2.2/Audion_Voice_AI_Studio_v2.2.2.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/voice-ai-studio/2.2.2/Audion_Voice_AI_Studio_v2.2.2_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/voice-ai-studio) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: 6515a4d967f21f7a43279c619eae37072d86539d9373d2853d60fef21b4ec4eb`
+`SHA-256: 7207d31139c88baa9e66e0f9169fe5333e7e8d4c28ebb9e1e44efa10ebde653a`
 
 ---
 
